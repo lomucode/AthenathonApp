@@ -1,0 +1,14 @@
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/bin/Debug/netstandard2.0/AthenathonApp.deps.json
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/bin/Debug/netstandard2.0/AthenathonApp.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/bin/Debug/netstandard2.0/ref/AthenathonApp.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/bin/Debug/netstandard2.0/AthenathonApp.pdb
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.csproj.AssemblyReference.cache
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.AssemblyInfoInputs.cache
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.AssemblyInfo.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.csproj.CoreCompileInputs.cache
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/ref/AthenathonApp.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.pdb
