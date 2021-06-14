@@ -45,14 +45,14 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/AthenathonApp.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/AthenathonApp.pdb
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/actool/_PartialAppManifest.items
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/actool/_BundleResourceWithLogicalName.items
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/ibtool/_BundleResourceWithLogicalName.items
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/coremlc/_PartialAppManifest.items
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/coremlc/_BundleResourceWithLogicalName.items
-/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-14.5/optimized/
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.csproj.AssemblyReference.cache
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.csproj.CoreCompileInputs.cache
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.csproj.CopyComplete
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.exe
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.pdb
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/actool/_PartialAppManifest.items
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/actool/_BundleResourceWithLogicalName.items
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/ibtool/_BundleResourceWithLogicalName.items
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/coremlc/_PartialAppManifest.items
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/coremlc/_BundleResourceWithLogicalName.items
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/

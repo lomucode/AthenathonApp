@@ -3,24 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AthenathonApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Hey Implementierung-Team! Lets start!" FontSize="Title" Padding="30,10,30,10"/>
-        
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+               <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="WidthRequest" Value="250" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#fff" Padding="36" CornerRadius="0">
+            <Label Text="Deutschland" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#000" FontSize="18"/>
+        </Frame>
+        <Label Text="Europe Day" FontSize="42" Padding="30,10,30,5" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
+        <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,5,30,10" TextColor="DarkBlue"/>
         <Button Text="Click Me" Clicked="Handle_Clicked" />
+      <StackLayout Padding="0,20,0,0">
+            <Button Text="Registrieren" BackgroundColor="Red" Style="{StaticResource buttonStyle}"/>
+            <Button Text="Anmelden" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
+      </StackLayout>
+         <StackLayout Orientation="Horizontal" VerticalOptions="End">
+        <Frame BackgroundColor="Black">
+            <Label TextColor="#fff" FontSize="12" Text="Lorem ipsum dolor sit amet, consetur sadispscing elitr, lorem ipsum dolor sit amet, consetur sadispscing elitr Lorem ipsum dolor sit amet, consetur sadispscing elitr. "/>
+        </Frame>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

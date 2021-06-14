@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/MainPage.xaml">
     <Files>
-      <File FileName="AthenathonApp/MainPage.xaml" Line="11" Column="9" />
-      <File FileName="AthenathonApp/MainPage.xaml.cs" Line="23" Column="6" />
+      <File FileName="AthenathonApp/MainPage.xaml" Line="11" Column="58" />
+      <File FileName="AthenathonApp/MainPage.xaml.cs" Line="18" Column="28" />
+      <File FileName="AthenathonApp.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,17 +11,17 @@
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
               <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
             </Node>
             <Node name="AthenathonApp.Android" expanded="True" />
-            <Node name="AthenathonApp.iOS" selected="True" />
+            <Node name="AthenathonApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.AthenathonApp.Android PreferredExecutionTarget="Android.Nexus_6_API_30" />
-  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BBEF503-5DC3-49AA-B05C-EF1E14B04C8F" />
+  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC9D815B-E18B-478F-890A-37ECA3B52C30" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
