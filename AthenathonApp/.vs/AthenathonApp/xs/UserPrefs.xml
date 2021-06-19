@@ -1,20 +1,29 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/StartingPage.xaml">
     <Files>
-      <File FileName="AthenathonApp/MainPage.xaml" Line="11" Column="58" />
-      <File FileName="AthenathonApp/MainPage.xaml.cs" Line="18" Column="28" />
-      <File FileName="AthenathonApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="AthenathonApp/Views/Login.xaml" Line="70" Column="58" />
+      <File FileName="AthenathonApp/App.xaml.cs" />
+      <File FileName="AthenathonApp/Views/StartingPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="AthenathonApp/Views/StartingPage.xaml" Line="20" Column="30" />
+      <File FileName="AthenathonApp/Views/Register.xaml.cs" Line="16" Column="49" />
+      <File FileName="AthenathonApp/Views/Login.xaml.cs" Line="14" Column="41" />
+      <File FileName="AthenathonApp/Views/Register.xaml" Line="66" Column="166" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Login.xaml" expanded="True" />
+                <Node name="Register.xaml" expanded="True" />
+                <Node name="StartingPage.xaml" expanded="True" selected="True" />
+              </Node>
               <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
             </Node>
-            <Node name="AthenathonApp.Android" expanded="True" />
-            <Node name="AthenathonApp.iOS" expanded="True" />
+            <Node name="AthenathonApp.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

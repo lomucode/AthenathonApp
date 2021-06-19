@@ -12,3 +12,6 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/ref/AthenathonApp.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/AthenathonApp.pdb
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/StartingPage.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Login.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Register.xaml.g.cs

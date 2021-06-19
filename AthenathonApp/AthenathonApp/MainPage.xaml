@@ -8,7 +8,7 @@
                <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="BorderRadius" Value="20" />
-                <Setter Property="WidthRequest" Value="250" />
+                <Setter Property="WidthRequest" Value="280" />
                 <Setter Property="TextColor" Value="White" />
             </Style>
         </ResourceDictionary>
@@ -17,20 +17,27 @@
 
 
     <StackLayout>
-        <Frame BackgroundColor="#fff" Padding="36" CornerRadius="0">
-            <Label Text="Deutschland" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#000" FontSize="18"/>
+        <Frame Padding="24, 52,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+               <Frame CornerRadius="15" HeightRequest="30" WidthRequest="30" IsClippedToBounds="True" HorizontalOptions="Start" Padding="0" HasShadow="False" BackgroundColor="Red">
+                <Image Source="angel_galaxy-wallpaper-2560x1440.jpg" Aspect="AspectFill" />
+               </Frame>
+            <Label FontAttributes="Bold" Text="Deutschland" VerticalOptions="Center"/>
+            </StackLayout>
         </Frame>
-        <Label Text="Europe Day" FontSize="42" Padding="30,10,30,5" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
-        <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,5,30,10" TextColor="DarkBlue"/>
-        <Button Text="Click Me" Clicked="Handle_Clicked" />
-      <StackLayout Padding="0,20,0,0">
-            <Button Text="Registrieren" BackgroundColor="Red" Style="{StaticResource buttonStyle}"/>
-            <Button Text="Anmelden" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
+        <StackLayout >
+        <Label Text="Europe Day" FontSize="42" Padding="30,20,30,0" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
+        <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,0,30,10" TextColor="DarkBlue"/>
+        </StackLayout>
+        <!--<Button Text="Click Me" Clicked="Handle_Clicked" />-->
+      <StackLayout VerticalOptions="EndAndExpand"  Padding="0 ,200, 0, 0">
+            <Button Text="Registrieren" FontSize="20" FontAttributes="Bold" BackgroundColor="Red" Style="{StaticResource buttonStyle}"/>
+            <Button Text="Anmelden" FontSize="20" FontAttributes="Bold" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
       </StackLayout>
-         <StackLayout Orientation="Horizontal" VerticalOptions="End">
-        <Frame BackgroundColor="Black">
+         <StackLayout Orientation="Horizontal" Padding="10,20,10,30" VerticalOptions="EndAndExpand" BackgroundColor="#000">
+        
             <Label TextColor="#fff" FontSize="12" Text="Lorem ipsum dolor sit amet, consetur sadispscing elitr, lorem ipsum dolor sit amet, consetur sadispscing elitr Lorem ipsum dolor sit amet, consetur sadispscing elitr. "/>
-        </Frame>
+        
         </StackLayout>
     </StackLayout>
 

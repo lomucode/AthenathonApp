@@ -133,4 +133,9 @@
       <Name>AthenathonApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\angel_galaxy-wallpaper-2560x1440.jpg" />
+    <BundleResource Include="Resources\Wavy_Spt-03_Single-01.png" />
+    <BundleResource Include="Resources\Wavy_Spt-03_Single-03.png" />
+  </ItemGroup>
 </Project>
