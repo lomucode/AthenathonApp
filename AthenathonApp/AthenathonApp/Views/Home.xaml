@@ -28,7 +28,6 @@
                                   </StackLayout>
                               </DataTemplate>
                           </CarouselView.ItemTemplate>
-
             </CarouselView>
             </StackLayout>
 
