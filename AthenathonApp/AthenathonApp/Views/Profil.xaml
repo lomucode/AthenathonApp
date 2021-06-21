@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AthenathonApp.Views.Profil"
+            Title="Profil" Icon="outline_person_outline_black_24dp.png" BackgroundColor="DarkGray" >
+    <!--<Image Source="residence.png" Aspect="AspectFill"/>-->
+     <ContentPage.Resources>
+        <ResourceDictionary>
+               <Style x:Key="textStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+                   <Setter Property="Margin" Value="0, 10, 0, 10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+<ContentPage.Content>
+   
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+
+        <Label Text="Profil" FontAttributes="Bold" FontSize="20" Style="{StaticResource textStyle}"/>
+            <StackLayout>
+                <Frame  CornerRadius="100" 
+           HeightRequest="200"
+           WidthRequest="200"
+           HorizontalOptions="Center"
+           IsClippedToBounds="True"
+            Margin="0" Padding="0">
+                    <Image Source="Swimming.jpeg" Aspect="AspectFill"/>
+                </Frame>
+            </StackLayout>
+        <Label Text="John Doe"  FontSize="20" Style="{StaticResource textStyle}"/>
+        <Label Text="Stundent"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <Label Text="Universität Siegen"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <!--UniCoins-->
+        <Label Text="Passwort ändern" TextColor="Orange" HorizontalOptions="Center" Margin="0, 40,0,0" FontSize="24" FontAttributes="Bold"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage.Content>
+</ContentPage>

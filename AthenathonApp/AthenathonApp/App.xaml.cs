@@ -1,4 +1,5 @@
 ﻿using System;
+using AthenathonApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,7 @@ namespace AthenathonApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new StartingPage());
         }
 
         protected override void OnStart()

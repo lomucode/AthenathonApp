@@ -1,19 +1,34 @@
-﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/MainPage.xaml">
+﻿<Properties StartupConfiguration="{57309680-1F1A-48E7-9803-1B0061AF718B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Framework.xaml">
     <Files>
-      <File FileName="AthenathonApp/MainPage.xaml" Line="11" Column="9" />
-      <File FileName="AthenathonApp/MainPage.xaml.cs" Line="23" Column="6" />
+      <File FileName="AthenathonApp/MainPage.xaml" Line="30" Column="79" />
+      <File FileName="AthenathonApp/Services/Profile.cs" />
+      <File FileName="AthenathonApp/Views/Profil.xaml" />
+      <File FileName="AthenathonApp/Services/Monkey.cs" />
+      <File FileName="AthenathonApp/Views/Framework.xaml" Line="22" Column="14" />
+      <File FileName="AthenathonApp/Views/Home.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Framework.xaml" selected="True" />
+                <Node name="Home.xaml" expanded="True" />
+                <Node name="Profil.xaml" expanded="True" />
+              </Node>
             </Node>
-            <Node name="AthenathonApp.Android" expanded="True" />
-            <Node name="AthenathonApp.iOS" selected="True" />
+            <Node name="AthenathonApp.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="AthenathonApp.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

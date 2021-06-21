@@ -125,6 +125,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -132,5 +135,16 @@
       <Project>{36F5F429-DC62-4EDF-8BE3-58453EDCC495}</Project>
       <Name>AthenathonApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\angel_galaxy-wallpaper-2560x1440.jpg" />
+    <BundleResource Include="Resources\Wavy_Spt-03_Single-01.png" />
+    <BundleResource Include="Resources\Wavy_Spt-03_Single-03.png" />
+    <BundleResource Include="Resources\outline_info_black_24dp.png" />
+    <BundleResource Include="Resources\outline_person_outline_black_24dp.png" />
+    <BundleResource Include="Resources\outline_bolt_black_24dp.png" />
+    <BundleResource Include="Resources\outline_bar_chart_black_24dp.png" />
+    <BundleResource Include="Resources\Swimming.jpeg" />
+    <BundleResource Include="Resources\residence.png" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AthenathonApp.Views.Login">
+    <ContentPage.Content>
+
+            <Grid BackgroundColor="#fffff">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55*" />
+            <RowDefinition Height="45*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView 
+            />
+            <Grid BackgroundColor="Transparent" RowSpacing="0">
+                        <Grid.RowDefinitions>
+            <RowDefinition Height="38*" />
+            <RowDefinition Height="62*" />
+        </Grid.RowDefinitions>
+                        <BoxView/>
+                <Frame Padding="15,35,0,0 " BackgroundColor="Transparent" HasShadow="False" >
+                    <StackLayout Padding=" 0,0,0,0" HorizontalOptions="Start" >
+                    <Label Text="Europe Day" FontSize="35" TextColor="DarkBlue"/>
+                    <Label Text="ATHENATHON" FontSize="40" FontAttributes="Bold" TextColor="DarkBlue" />
+                      </StackLayout>
+                </Frame>
+                        <BoxView Grid.Row="1"
+                 />
+             <Image Grid.Row="1" Source="Wavy_Spt-03_Single-01.png" Aspect="AspectFit" />
+            </Grid>
+
+        <BoxView Grid.Row="1"
+                 Color="#F5F4F5"
+                 CornerRadius="30,30,0,0"
+                 />
+
+                <Grid Grid.Row="1" Padding="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="83*"/>
+                        <ColumnDefinition Width="17*"/>
+          
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView/>
+                    <Label Text="Anmelden" FontSize="28" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <BoxView Grid.Column="1" Margin="30,0,30,0"/>
+                   <Button Grid.Column="1" Text="->" BackgroundColor="DarkRed" CornerRadius="25" WidthRequest="50" Clicked="PushHome"/>
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="30,0,30,0"/>
+                   <Entry Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="E-Mail" WidthRequest="50"/>
+                   <BoxView Grid.Row="2" Margin="30,0,30,0" Grid.ColumnSpan="2"/>
+                   <Entry Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="Password" IsPassword="True" WidthRequest="50"/>
+                   <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="30,0,30,0"/>
+                   <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Passwort vergessen?" TextColor="Red" TextDecorations="Underline" FontSize="14"/>
+                   <BoxView Grid.Row="4" Grid.ColumnSpan="2" Margin="30,0,30,0" />
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="Center">
+                   <Label Text="Du hast noch kein Konto?" TextColor="#000" FontSize="14" VerticalOptions="Center"
+                         />
+                        <Button Clicked="ButtonRegister" Text="Registriere dich hier."/>
+                    </StackLayout>
+            </Grid>
+
+
+
+    </Grid>
+    </ContentPage.Content>
+</ContentPage>
