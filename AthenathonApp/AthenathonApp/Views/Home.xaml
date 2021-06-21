@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AthenathonApp.Views.Home"
+     Title="Dashboard" Icon="outline_bar_chart_black_24dp.png">
+
+
+    <ContentPage.Content>
+            <ScrollView>
+        <StackLayout>
+        <Label Text="Dashboard" HorizontalTextAlignment="Start" FontSize="36" FontAttributes="Bold"/>
+
+                <Label Text="News" Padding="0" Margin="0"/>
+            <StackLayout HeightRequest="200" Margin="0" Padding="0">
+
+            <CarouselView ItemsSource="{Binding Monkeys}" Margin="0">
+                          <CarouselView.ItemTemplate>
+                              <DataTemplate>
+                                  <StackLayout>
+                                      <Frame HasShadow="True" BorderColor="DarkBlue" CornerRadius="4" Margin="20,0, 20, 0 " HeightRequest="140" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                          <StackLayout>
+                                              <Label Text="{Binding Name}" FontSize="12"/>
+                                              <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="90" WidthRequest="400" Margin="10, 0 , 10, 0" HorizontalOptions="Center" />
+                                              <Label Text="{Binding Details}" LineBreakMode="TailTruncation" MaxLines="2" FontSize="12"/> 
+                            </StackLayout>
+                                      </Frame>
+                                  </StackLayout>
+                              </DataTemplate>
+                          </CarouselView.ItemTemplate>
+
+            </CarouselView>
+            </StackLayout>
+
+            <StackLayout class="activity">
+                <Label Text="Deine Aktivität"/>
+                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
+                    
+                </StackLayout>
+            </StackLayout>
+            <StackLayout class="lastActivity">
+                <Label Text="Letzte Aktivität (heute)"/>        
+                <StackLayout class="newsItems" HeightRequest="100" BackgroundColor="Pink">
+                    
+                </StackLayout>
+            </StackLayout>
+                        <StackLayout class="activity">
+                <Label Text="Letzte Aktivität (7 Tage)"/>
+                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
+                    
+                </StackLayout>
+            </StackLayout>
+                                    <StackLayout class="activity">
+                <Label Text="Letzte Aktivität - Gesamt (7 Tage)"/>
+                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
+                    
+                </StackLayout>
+            </StackLayout>
+                                    <StackLayout class="activity">
+                <Label Text="Top Sportarten (nach Teilnehmern)"/>
+                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
+                    
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content> 
+
+    </ContentPage>

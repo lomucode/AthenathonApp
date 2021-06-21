@@ -63,7 +63,7 @@
                    <BoxView Grid.Row="3" Margin="30,0,30,0" Grid.ColumnSpan="2"/>
                    <Entry Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="Passwort bestätigen" IsPassword="True" WidthRequest="50"/>
                    <BoxView Grid.Row="4" Grid.ColumnSpan="2" />
-                    <Button Grid.Row="4" Grid.ColumnSpan="2" Text="Registrieren" TextColor="Gray" BackgroundColor="LightPink" Margin="45, 10, 45, 0" CornerRadius="20"/>
+                    <Button Grid.Row="4" Grid.ColumnSpan="2" Text="Registrieren" TextColor="Gray" BackgroundColor="LightPink" Margin="45, 10, 45, 0" CornerRadius="20" Clicked="PushHome"/>
                     <BoxView Grid.Row="5" Grid.ColumnSpan="2" />
                    <StackLayout Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="Center">
                    <Label Text="Du hast schon ein Konto?" TextColor="#000" FontSize="14" VerticalOptions="Center"

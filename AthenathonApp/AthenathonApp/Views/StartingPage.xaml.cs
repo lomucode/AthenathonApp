@@ -14,12 +14,12 @@ namespace AthenathonApp
 
         public async void ButtonLogin(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new Login());
+            await Navigation.PushModalAsync(new Login());
         }
 
         public async void ButtonRegister(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new Register());
+            await Navigation.PushModalAsync(new Register());
         }
 
     }

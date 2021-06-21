@@ -10,7 +10,6 @@ namespace AthenathonApp
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new StartingPage());
         }
 

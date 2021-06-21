@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J3HLR6Bx9lpJGG4AX9vQeweJ/9owL35ZSa0AkAw5tnT6XjD2IoykB0hfsJ8x/subCUGRVmHi/OROwrM2ec9wig==",
+  "dgSpecHash": "e6YYWYKLjzeZc5uB1B9wYiSjj3NP+5Qpeb5NJpPJO3w+v6WeAxAqMaqSNTeuYH1PRc7um/669tIs8jWsCPJWKA==",
   "success": true,
   "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
   "expectedPackageFiles": [
+    "/Users/louismueller/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.androidx.activity/1.1.0.5/xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.androidx.annotation/1.1.0.8/xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",

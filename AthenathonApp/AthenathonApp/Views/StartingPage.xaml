@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AthenathonApp.StartingPage">
+             x:Class="AthenathonApp.StartingPage"
+             NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -17,7 +18,8 @@
 
 
     <StackLayout>
-        <Frame Padding="24, 5,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
+
+        <Frame Padding="24, 45,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                <Frame CornerRadius="15" HeightRequest="30" WidthRequest="30" IsClippedToBounds="True" HorizontalOptions="Start" Padding="0" HasShadow="False" BackgroundColor="Red">
                 <Image Source="angel_galaxy-wallpaper-2560x1440.jpg" Aspect="AspectFill" />

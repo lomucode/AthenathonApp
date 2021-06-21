@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<TabbedPage SelectedTabColor="Orange"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AthenathonApp.Views"
+    x:Class="AthenathonApp.Views.Framework">
+
+    <local:Home></local:Home>
+
+        <ContentPage Title="Aktivität" Icon="outline_bolt_black_24dp.png">
+        <StackLayout>
+            <Label Text="Aktivität"/>
+        </StackLayout>
+    </ContentPage>
+
+    <local:Profil></local:Profil>
+
+    <ContentPage Title="Info" Icon="outline_info_black_24dp.png">
+        <StackLayout>
+            <Label Text="Info" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

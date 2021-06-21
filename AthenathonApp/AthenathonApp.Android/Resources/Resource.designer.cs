@@ -11779,13 +11779,31 @@ namespace AthenathonApp.Droid
 			public const int notify_panel_notification_icon_bg = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int test_custom_background = 2131165325;
+			public const int outline_bar_chart_black_24dp = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int tooltip_frame_dark = 2131165326;
+			public const int outline_bolt_black_24dp = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int tooltip_frame_light = 2131165327;
+			public const int outline_info_black_24dp = 2131165327;
+			
+			// aapt resource value: 0x7F070090
+			public const int outline_person_outline_black_24dp = 2131165328;
+			
+			// aapt resource value: 0x7F070091
+			public const int residence = 2131165329;
+			
+			// aapt resource value: 0x7F070092
+			public const int Swimming = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int test_custom_background = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int tooltip_frame_dark = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int tooltip_frame_light = 2131165333;
 			
 			static Drawable()
 			{

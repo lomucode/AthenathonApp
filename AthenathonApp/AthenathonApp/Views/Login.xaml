@@ -56,7 +56,7 @@
                     <BoxView/>
                     <Label Text="Anmelden" FontSize="28" FontAttributes="Bold" VerticalOptions="Center"/>
                     <BoxView Grid.Column="1" Margin="30,0,30,0"/>
-                   <Button Grid.Column="1" Text="->" BackgroundColor="DarkRed" CornerRadius="25" WidthRequest="50"/>
+                   <Button Grid.Column="1" Text="->" BackgroundColor="DarkRed" CornerRadius="25" WidthRequest="50" Clicked="PushHome"/>
                     <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="30,0,30,0"/>
                    <Entry Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="E-Mail" WidthRequest="50"/>
                    <BoxView Grid.Row="2" Margin="30,0,30,0" Grid.ColumnSpan="2"/>

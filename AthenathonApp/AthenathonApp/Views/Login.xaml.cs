@@ -13,8 +13,13 @@ namespace AthenathonApp.Views
         }
         public async void ButtonRegister(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new Register());
+            await Navigation.PushModalAsync(new Register());
+            NavigationPage.SetHasBackButton(this, false);
         }
 
+        public async void PushHome(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Framework());
+        }
     }
 }
