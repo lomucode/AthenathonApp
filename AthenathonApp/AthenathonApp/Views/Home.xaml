@@ -2,14 +2,15 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="http://xamarin.com/schemas/2014/forms" xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
     x:Class="AthenathonApp.Views.Home"
      Title="Dashboard" Icon="outline_bar_chart_black_24dp.png">
 
 
     <ContentPage.Content>
             <ScrollView>
-        <StackLayout>
-        <Label Text="Dashboard" HorizontalTextAlignment="Start" FontSize="36" FontAttributes="Bold"/>
+        <StackLayout Margin=" 10,0,10,0">
+        <Label Text="Dashboard" HorizontalTextAlignment="Start" FontSize="36" FontAttributes="Bold" />
 
                 <Label Text="News" Padding="0" Margin="0"/>
             <StackLayout HeightRequest="200" Margin="0" Padding="0">
@@ -18,7 +19,7 @@
                           <CarouselView.ItemTemplate>
                               <DataTemplate>
                                   <StackLayout>
-                                      <Frame HasShadow="True" BorderColor="DarkBlue" CornerRadius="4" Margin="20,0, 20, 0 " HeightRequest="140" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                      <Frame CornerRadius="15" BorderColor="DarkBlue" Margin="20,0, 20, 0 " HeightRequest="140" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                                           <StackLayout>
                                               <Label Text="{Binding Name}" FontSize="12"/>
                                               <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="90" WidthRequest="400" Margin="10, 0 , 10, 0" HorizontalOptions="Center" />
@@ -28,32 +29,78 @@
                                   </StackLayout>
                               </DataTemplate>
                           </CarouselView.ItemTemplate>
-
             </CarouselView>
             </StackLayout>
 
-            <StackLayout class="activity">
-                <Label Text="Deine Aktivität"/>
-                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
-                    
-                </StackLayout>
+                <Label Text="Deine Aktivität" />
+            <StackLayout HeightRequest="140">
+            <CarouselView x:Name="MainCarouselView" WidthRequest="100">
+                <CarouselView.ItemsLayout >
+                    <LinearItemsLayout 
+                        Orientation="Horizontal"
+                        ItemSpacing="20"
+                                       />
+                        </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame BackgroundColor="Orange" CornerRadius="15" Margin="20, 10,20,10" Padding="0">
+                                <StackLayout Margin="0" Padding="0">
+                                    <StackLayout HorizontalOptions="Center" Margin="0, 5,0,0" >
+                                        <Label TextColor="#fff" Text="{Binding [1]}" FontSize="35" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label TextColor="#fff" Text="Distanz(km)" FontSize="14" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="Start" Margin="10, 5,0,10">
+                                        <Label FontAttributes="Bold"  TextColor="#fff" Text="{Binding [0]}" FontSize="14" HorizontalOptions="Start"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
             </StackLayout>
-            <StackLayout class="lastActivity">
+
+            
+            <StackLayout class="lastActivity" HeightRequest="130">
                 <Label Text="Letzte Aktivität (heute)"/>        
-                <StackLayout class="newsItems" HeightRequest="100" BackgroundColor="Pink">
+                <CarouselView x:Name="LastActivityView">
+                <CarouselView.ItemsLayout >
+                    <LinearItemsLayout 
+                        Orientation="Horizontal"
+                        ItemSpacing="20"
+                                       />
+                        </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame BackgroundColor="LightGreen" CornerRadius="15" Margin="20, 10,20,10" Padding="0" HeightRequest="80">
                     
-                </StackLayout>
+                                    <StackLayout Margin="20" VerticalOptions="End" Orientation="Horizontal" HorizontalOptions="Center">
+                                        <Label VerticalOptions="End" TextColor="#fff" Text="{Binding [0]}" FontSize="20" FontAttributes="Bold" />
+                                        <Label VerticalOptions="End" TextColor="#fff" Text="+" Margin="20,0,0,0" FontSize="40" FontAttributes="Bold" />
+                                        <Label VerticalOptions="End" TextColor="#fff" Text= "{Binding [1]}" FontSize="40" />
+                                        <Label VerticalOptions="End" TextColor="#fff" Text="km" FontSize="20" FontAttributes="Bold" />
+                                    </StackLayout>
+                               
+                            </Frame>
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
             </StackLayout>
                         <StackLayout class="activity">
                 <Label Text="Letzte Aktivität (7 Tage)"/>
-                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
-                    
+                <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
+                    <microcharts:ChartView x:Name="chartViewLine" HeightRequest="150"/>
                 </StackLayout>
             </StackLayout>
                                     <StackLayout class="activity">
                 <Label Text="Letzte Aktivität - Gesamt (7 Tage)"/>
-                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
-                    
+                <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
+                    <microcharts:ChartView x:Name="chartViewPie" HeightRequest="150"/>
                 </StackLayout>
             </StackLayout>
                                     <StackLayout class="activity">

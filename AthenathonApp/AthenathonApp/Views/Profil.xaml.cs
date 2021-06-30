@@ -25,16 +25,11 @@ namespace AthenathonApp.Views
             InitializeComponent();
         }
 
-        private void addData()
+        public async void ChangePassword(object sender, System.EventArgs e)
         {
-            profile.Add(new Profile
-            {
-                Name = "John",
-                University = "Universität Siegen",
-                Role = "Student"
-            });
-
+            await Navigation.PushModalAsync(new ChangePassword());
         }
+
 
 
 
