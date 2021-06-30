@@ -574,3 +574,10 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/outline_info_black_24dp.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/outline_person_outline_black_24dp.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/outline_bolt_black_24dp.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/outline_bar_chart_black_24dp.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/swimming.jpeg
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/res/drawable/residence.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/android/assets/Newtonsoft.Json.dll

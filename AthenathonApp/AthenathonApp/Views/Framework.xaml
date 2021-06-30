@@ -16,7 +16,7 @@
 
     <ContentPage Title="Info" Icon="outline_info_black_24dp.png">
         <StackLayout>
-            <Label Text="Info" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="Info" VerticalOptions="Center" HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage>
 </TabbedPage>

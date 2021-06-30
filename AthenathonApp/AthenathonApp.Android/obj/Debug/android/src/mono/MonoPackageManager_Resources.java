@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"AthenathonApp.Android.dll",
 		"AthenathonApp.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

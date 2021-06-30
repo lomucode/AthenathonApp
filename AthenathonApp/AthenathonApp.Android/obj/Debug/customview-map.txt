@@ -33,6 +33,7 @@ paths;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android
 resources;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/attrs.xml
 resources;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/strings.xml
 resources;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/styles.xml
+resources;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/88/jl/res/values/strings.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/styles.xml
 set;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/enterfromleft.xml
@@ -40,6 +41,7 @@ set;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/o
 set;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/exittoleft.xml
 set;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/exittoright.xml
 string;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/strings.xml
+string;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/88/jl/res/values/strings.xml
 style;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/styles.xml
 style;obj/Debug/res/values/styles.xml
 translate;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/enterfromleft.xml

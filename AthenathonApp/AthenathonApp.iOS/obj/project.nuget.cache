@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Y3n7p6MXdAey/OFhtCbiKRUnsyo/YyNhcGm6dt+wYOoor83klMoC5N2sjLWfPRXJHs7okC01MPz2htxy0y3v/w==",
+  "dgSpecHash": "VpQn3zCMqESSJF/579ZuBhFxreg1OB3hbbGkWzbmpDtROA10MUvWJA8fAbJx4LIm4ncvRpqtzBHVolHw/gdGcA==",
   "success": true,
   "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
   "expectedPackageFiles": [
+    "/Users/louismueller/.nuget/packages/microcharts/0.9.5.9/microcharts.0.9.5.9.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/microcharts.forms/0.9.5.9/microcharts.forms.0.9.5.9.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/skiasharp/2.80.2/skiasharp.2.80.2.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/skiasharp.views/2.80.2/skiasharp.views.2.80.2.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/skiasharp.views.forms/2.80.2/skiasharp.views.forms.2.80.2.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
