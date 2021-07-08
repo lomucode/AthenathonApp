@@ -15,6 +15,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+    <PackageReference Include="Microcharts" Version="0.9.5.9" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -22,6 +23,7 @@
     <None Remove="ViewModels\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microcharts.Forms" />
+    <None Remove="Microcharts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />

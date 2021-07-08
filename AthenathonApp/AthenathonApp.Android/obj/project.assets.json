@@ -1082,6 +1082,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microcharts": "0.9.5.9",
           "Microcharts.Forms": "0.9.5.9",
           "Newtonsoft.Json": "13.0.1",
           "Xamarin.Essentials": "1.6.1",
@@ -2511,20 +2512,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/louismueller/.nuget/packages/": {}
+    "/Users/oliver.specovius/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
+      "projectUniqueName": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
       "projectName": "AthenathonApp.Android",
-      "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
-      "packagesPath": "/Users/louismueller/.nuget/packages/",
-      "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/",
+      "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
+      "packagesPath": "/Users/oliver.specovius/.nuget/packages/",
+      "outputPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/louismueller/.config/NuGet/NuGet.Config"
+        "/Users/oliver.specovius/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid11.0"
@@ -2535,8 +2536,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
-              "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
+            "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+              "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
             }
           }
         }

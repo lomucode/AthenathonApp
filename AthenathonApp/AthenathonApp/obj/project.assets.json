@@ -946,6 +946,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microcharts >= 0.9.5.9",
       "Microcharts.Forms >= 0.9.5.9",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.1",
@@ -954,19 +955,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/louismueller/.nuget/packages/": {}
+    "/Users/oliver.specovius/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+      "projectUniqueName": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
       "projectName": "AthenathonApp",
-      "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
-      "packagesPath": "/Users/louismueller/.nuget/packages/",
-      "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
+      "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+      "packagesPath": "/Users/oliver.specovius/.nuget/packages/",
+      "outputPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/louismueller/.config/NuGet/NuGet.Config"
+        "/Users/oliver.specovius/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -990,6 +991,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microcharts": {
+            "target": "Package",
+            "version": "[0.9.5.9, )"
+          },
           "Microcharts.Forms": {
             "target": "Package",
             "version": "[0.9.5.9, )"

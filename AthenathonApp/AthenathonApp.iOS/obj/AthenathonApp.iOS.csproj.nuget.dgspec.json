@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj": {}
+    "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj": {}
   },
   "projects": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj": {
+    "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+        "projectUniqueName": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
         "projectName": "AthenathonApp.iOS",
-        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
-        "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
+        "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+        "packagesPath": "/Users/oliver.specovius/.nuget/packages/",
+        "outputPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/louismueller/.config/NuGet/NuGet.Config"
+          "/Users/oliver.specovius/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -26,8 +26,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
-                "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
+              "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+                "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
               }
             }
           }
@@ -67,17 +67,17 @@
         }
       }
     },
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+    "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "projectUniqueName": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
         "projectName": "AthenathonApp",
-        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
-        "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
+        "projectPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "packagesPath": "/Users/oliver.specovius/.nuget/packages/",
+        "outputPath": "/Users/oliver.specovius/Projects/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/louismueller/.config/NuGet/NuGet.Config"
+          "/Users/oliver.specovius/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -101,6 +101,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "Microcharts.Forms": {
               "target": "Package",
               "version": "[0.9.5.9, )"
