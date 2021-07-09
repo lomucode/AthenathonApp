@@ -27,6 +27,7 @@ external-path;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
 FrameLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/layout/bottomtablayout.xml
+FrameLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/92/jl/res/layout/camerafragment.xml
 item;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/values/styles.xml
 LinearLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/layout/bottomtablayout.xml
 paths;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/44/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
@@ -48,5 +49,6 @@ translate;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.And
 translate;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/enterfromright.xml
 translate;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/exittoleft.xml
 translate;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/anim/exittoright.xml
+xamarin.communitytoolkit.ui.views.AutoFitTextureView;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/92/jl/res/layout/camerafragment.xml
 xamarin.forms.platform.android.appcompat.FormsViewPager;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/layout/rootlayout.xml
 xamarin.forms.platform.android.ShellFlyoutLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/45/jl/res/layout/flyoutcontent.xml

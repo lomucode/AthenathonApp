@@ -70,3 +70,4 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/SkiaSharp.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/SkiaSharp.Views.iOS.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/SkiaSharp.Views.Forms.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Xamarin.CommunityToolkit.dll

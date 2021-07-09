@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Home.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp.iOS/Main.cs">
     <Files>
-      <File FileName="AthenathonApp/Views/Home.xaml.cs" Line="49" Column="19" />
-      <File FileName="AthenathonApp/Views/Home.xaml" Line="103" Column="64" />
+      <File FileName="AthenathonApp/Views/Framework.xaml" Line="95" Column="14" />
+      <File FileName="AthenathonApp.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,18 +10,15 @@
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="ChangePassword.xaml" expanded="True" />
                 <Node name="Framework.xaml" expanded="True" />
-                <Node name="Home.xaml" expanded="True">
-                  <Node name="Home.xaml.cs" selected="True" />
-                </Node>
-                <Node name="Login.xaml" expanded="True" />
-                <Node name="Profil.xaml" expanded="True" />
-                <Node name="StartingPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="AthenathonApp.iOS" expanded="True" />
+            <Node name="AthenathonApp.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="AthenathonApp.iOS" expanded="True">
+              <Node name="Main.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

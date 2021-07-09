@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3HlO/exeaVdhGzx/33rNPPf+jVAEZSchX6LvSWtCtLRlxQuIpf+9/joyeIxqD39dajA+n6wsD8K3YnwXrt5Mow==",
+  "dgSpecHash": "FCQBOD6EFT/vBVCThTuHwGs0eVAYeK72ybF1mHMIR7sSqCsk2GdXy3V62t/+Pp1wFFzPEm9tBnv8LgZiAYy1aw==",
   "success": true,
   "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
   "expectedPackageFiles": [
@@ -14,8 +14,12 @@
     "/Users/louismueller/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/louismueller/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/system.reflection.emit.ilgeneration/4.7.0/system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/system.reflection.emit.lightweight/4.7.0/system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/xamarin.communitytoolkit/1.2.0/xamarin.communitytoolkit.1.2.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

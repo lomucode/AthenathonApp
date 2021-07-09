@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N9Or7fhkjPvmiQ+rkRVXIcy4F5WzIJkjmJwoLCYgfEmBdbeJUcp52dk+tx2MSX+BsguWTGvrZ4BZt6uqeAJCDQ==",
+  "dgSpecHash": "T443Izv7R0pnBhhv1g7e3L9HFSuDZ0I/CydvLkxE6dGuFtDMQYMLrXbqNijmyk7+sQDJNCqTS3kmWeXqjRbygg==",
   "success": true,
   "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "/Users/louismueller/.nuget/packages/xamarin.androidx.versionedparcelable/1.1.1.6/xamarin.androidx.versionedparcelable.1.1.1.6.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.androidx.viewpager/1.0.0.6/xamarin.androidx.viewpager.1.0.0.6.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.androidx.viewpager2/1.0.0.8/xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/xamarin.communitytoolkit/1.2.0/xamarin.communitytoolkit.1.2.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.google.android.material/1.2.1.1/xamarin.google.android.material.1.2.1.1.nupkg.sha512",
