@@ -19,3 +19,5 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Framework.xaml.g.cs
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Profil.xaml.g.cs
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/ChangePassword.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Info.xaml.g.cs
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/Debug/netstandard2.0/Views/Activity.xaml.g.cs
