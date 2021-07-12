@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AthenathonApp.Views.Activity"
+    Title="Aktivity" Icon="outline_bolt_black_24dp.png" BackgroundColor="AliceBlue">
+      
+
+         <ContentPage.Content>
+               <ScrollView>
+            
+                <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+                    <Frame BackgroundColor="Orchid" Padding="70"  CornerRadius="20">
+                        <Label Text="Guten Morgen,{Name}!" HorizontalTextAlignment="Start" Margin="-20, 0, 180, 0" TextColor="White" FontSize="18" FontAttributes="bold"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" Padding="36" CornerRadius="20" Margin="60,-40,60,0">
+                        <StackLayout>
+                            <Label Text="ATHENATHON GESAMTFORTSCHRITT" HorizontalTextAlignment="center" TextColor="Black" FontSize="18" FontAttributes="bold" CharacterSpacing="0.5"/>
+                            <Label Text="9.310" HorizontalTextAlignment="center" TextColor="Black" FontSize="52" FontAttributes="bold"/>
+                            <Label Text="Fast geschafft!" HorizontalTextAlignment="center" TextColor="Gray" FontSize="18" FontAttributes="bold"/>
+                        </StackLayout>
+
+
+                    </Frame>
+
+
+                        <Label Text="AKTIVITÄT STARTEN" HorizontalTextAlignment="start" TextColor="DarkGray" Margin="60, 20, 0, 0" FontSize="18" FontAttributes="bold"/>
+                        <StackLayout Margin="0,0,100,0">
+                            <Picker Title="Sportart auswählen"
+                                    TextColor="Black" FontSize="18" FontAttributes="bold" HorizontalTextAlignment="start" VerticalOptions="CenterAndExpand" Margin="60, 10, 0, 0" WidthRequest="280">
+                
+                                <Picker.Items>
+                                    <x:String>Laufen</x:String>
+                                    <x:String>Spazieren</x:String>
+                                    <x:String>Schwimmen</x:String>
+                                    <x:String>Fahrrad fahren</x:String>
+                                    <x:String>Hiking</x:String>
+                                    <x:String>Indoor-Biking</x:String>
+                                    <x:String>Sonstiges</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </StackLayout>
+
+                        <StackLayout>
+                            
+                            <Button x:Name="button1" Text="START" TextColor="white" BackgroundColor="Pink" Margin="45, 20, 45, 0" CornerRadius="20" VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="Center" Clicked="Button_Clicked" WidthRequest="280" FontAttributes="Bold">
+                
+                           </Button>
+
+                            <Label x:Name="label" IsVisible="False" />
+                            <Button x:Name="Button2" Text="STOP" TextColor="white" BackgroundColor="Orange" Margin="45, 20, 45, 0" CornerRadius="20" VerticalOptions="CenterAndExpand"
+                                                        HorizontalOptions="Center" Clicked="Button_Clicked_1" FontAttributes="Bold" WidthRequest="280" IsVisible="False">
+                            </Button>
+
+                            <Label x:Name="label1" Text=" 00:00:02" HorizontalTextAlignment="Center" TextColor="black" Margin="0, 10, 0, 0" FontSize="30" FontAttributes="bold" IsVisible="false" />
+                            <Label x:Name="label2" Text="Dauer" HorizontalTextAlignment="center" TextColor="Gray" FontSize="18" Margin="0, 10, 0, 0" IsVisible="false"/>
+
+                            <Label x:Name="label3" Text="0,01" HorizontalTextAlignment="Center" TextColor="black" Margin="0, 10, 0, 0" FontSize="30" FontAttributes="bold" IsVisible="false"/>
+                            <Label x:Name="label4" Text="Distanz (km)" HorizontalTextAlignment="center" TextColor="Gray" FontSize="18" Margin="0,10,0,0" IsVisible="false"/>
+                        </StackLayout>
+
+
+                        <Label x:Name="label5" Text="oder" HorizontalTextAlignment="center" TextColor="Gray" FontSize="18" Margin="0,20,0,0" />
+                        <Label x:Name="label6" Text="Daten eingeben" HorizontalTextAlignment="start" TextColor="DarkGray" Margin="60, 10, 30, 0" FontSize="18" FontAttributes="bold" />
+                        <Entry x:Name="label7" Placeholder="Kilometer eingeben (km)"  BackgroundColor="AliceBlue" TextColor="DarkGray" Margin="60,10,30,0" WidthRequest="10"  />
+                            
+                        <Button x:Name="label8" Text="SENDEN" TextColor="white" BackgroundColor="Orange" Margin="45, 20, 45, 0" CornerRadius="20" VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Center" WidthRequest="280" FontAttributes="Bold" Clicked="Button_Clicked_2" >
+                            
+      
+                        </Button>
+                 </StackLayout>
+         
+        
+              </ScrollView>
+        </ContentPage.Content>     
+
+</ContentPage>

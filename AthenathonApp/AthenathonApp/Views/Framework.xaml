@@ -6,17 +6,13 @@
 
     <local:Home></local:Home>
 
-        <ContentPage Title="Aktivität" Icon="outline_bolt_black_24dp.png">
-        <StackLayout>
-            <Label Text="Aktivität"/>
-        </StackLayout>
-    </ContentPage>
+  
+
+    <local:Activity></local:Activity>
 
     <local:Profil></local:Profil>
 
-    <ContentPage Title="Info" Icon="outline_info_black_24dp.png">
-        <StackLayout>
-            <Label Text="Info" VerticalOptions="Center" HorizontalOptions="Center"/>
-        </StackLayout>
-    </ContentPage>
+     <local:Info></local:Info>
+
+    
 </TabbedPage>

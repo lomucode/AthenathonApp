@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Y3n7p6MXdAey/OFhtCbiKRUnsyo/YyNhcGm6dt+wYOoor83klMoC5N2sjLWfPRXJHs7okC01MPz2htxy0y3v/w==",
+  "dgSpecHash": "hw7z/pFU2Zyzh2IqoQEnOCxK7SqGnv85Y/74Wj4DwzWWp5bIx7SvyFwSSDKOfQWHqmEnvg2HmBepl5e4PBZJ6A==",
   "success": true,
-  "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+  "projectFilePath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/louismueller/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
-    "/Users/louismueller/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/louismueller/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
-    "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/anni/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/anni/.nuget/packages/syncfusion.licensing/19.2.0.44/syncfusion.licensing.19.2.0.44.nupkg.sha512",
+    "/Users/anni/.nuget/packages/syncfusion.xamarin.core/19.2.0.44/syncfusion.xamarin.core.19.2.0.44.nupkg.sha512",
+    "/Users/anni/.nuget/packages/syncfusion.xamarin.expander/19.2.0.44/syncfusion.xamarin.expander.19.2.0.44.nupkg.sha512",
+    "/Users/anni/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/anni/.nuget/packages/xamarin.communitytoolkit/1.1.0/xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+    "/Users/anni/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/anni/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

@@ -21,7 +21,7 @@
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
 
-        <Label Text="Profil" FontAttributes="Bold" FontSize="20" Style="{StaticResource textStyle}"/>
+        <Label Text="Profil" FontAttributes="Bold" FontSize="25" Style="{StaticResource textStyle}"/>
             <StackLayout>
                 <Frame  CornerRadius="100" 
            HeightRequest="200"
@@ -33,7 +33,7 @@
                 </Frame>
             </StackLayout>
         <Label Text="John Doe"  FontSize="20" Style="{StaticResource textStyle}"/>
-        <Label Text="Stundent"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <Label Text="Student"  FontSize="18" Style="{StaticResource textStyle}"/>
         <Label Text="Universität Siegen"  FontSize="18" Style="{StaticResource textStyle}"/>
         <!--UniCoins-->
         <Label Text="Passwort ändern" TextColor="Orange" HorizontalOptions="Center" Margin="0, 40,0,0" FontSize="24" FontAttributes="Bold"/>

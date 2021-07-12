@@ -14,12 +14,16 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="19.2.0.44" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
     <None Remove="Services\" />
     <None Remove="ViewModels\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Syncfusion.Xamarin.Expander" />
+    <None Remove="Xamarin.CommunityToolkit" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />

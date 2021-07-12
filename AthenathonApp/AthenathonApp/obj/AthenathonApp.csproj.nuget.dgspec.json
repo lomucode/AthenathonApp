@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {}
+    "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {}
   },
   "projects": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+    "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "projectUniqueName": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
         "projectName": "AthenathonApp",
-        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
-        "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
+        "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "packagesPath": "/Users/anni/.nuget/packages/",
+        "outputPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/louismueller/.config/NuGet/NuGet.Config"
+          "/Users/anni/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -47,6 +47,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Syncfusion.Xamarin.Expander": {
+              "target": "Package",
+              "version": "[19.2.0.44, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
