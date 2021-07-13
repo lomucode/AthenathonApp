@@ -32,6 +32,7 @@ namespace AthenathonApp.Views
         private const string monkeyUrl = "https://montemagno.com/monkeys.json";
         private readonly HttpClient httpClient = new HttpClient();
 
+
         public ObservableCollection<Monkey> Monkeys { get; set; } = new ObservableCollection<Monkey>();
 
         public Home()

@@ -1,9 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:App3over.ViewModels"
              x:Class="AthenathonApp.MainPage">
 
-    <ContentPage.Resources>
+    <!--<ContentPage.BindingContext>
+        <ViewModels:mainViewmodel/>
+    </ContentPage.BindingContext>-->
+
+    <!--<ListView ItemsSource="{Binding AspNetUserList}"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding userName}"
+                               FontSize="24"/>
+                        <Label Text="{Binding Email}"
+                               FontSize="18"
+                               Opacity="0.6"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+         
+        
+        
+    </ListView>-->
+
+    <!--<ContentPage.Resources>
         <ResourceDictionary>
                <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -29,7 +54,6 @@
         <Label Text="Europe Day" FontSize="42" Padding="30,20,30,0" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
         <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,0,30,10" TextColor="DarkBlue"/>
         </StackLayout>
-        <!--<Button Text="Click Me" Clicked="Handle_Clicked" />-->
       <StackLayout VerticalOptions="EndAndExpand"  Padding="0 ,200, 0, 0">
             <Button Text="Registrieren" FontSize="20" FontAttributes="Bold" BackgroundColor="Red" Style="{StaticResource buttonStyle}"/>
             <Button Text="Anmelden" FontSize="20" FontAttributes="Bold" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
@@ -39,6 +63,6 @@
             <Label TextColor="#fff" FontSize="12" Text="Lorem ipsum dolor sit amet, consetur sadispscing elitr, lorem ipsum dolor sit amet, consetur sadispscing elitr Lorem ipsum dolor sit amet, consetur sadispscing elitr. "/>
         
         </StackLayout>
-    </StackLayout>
+    </StackLayout>-->
 
 </ContentPage>

@@ -88,9 +88,7 @@ namespace AthenathonApp.Views
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
 
-
-
-            DisplayAlert("Aktivität getrackt!", "Deine Distanz wurde erfolgreich getrackt :)", "OK");
+            await DisplayAlert("Aktivität getrackt!", "Deine Distanz wurde erfolgreich getrackt :)", "OK");
             ((Button)sender).IsVisible = false;
 
 

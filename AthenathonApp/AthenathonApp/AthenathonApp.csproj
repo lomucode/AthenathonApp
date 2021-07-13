@@ -3,7 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
+  <!-- <PropertyGroup>
+  <Nullable>enable</Nullable>
+  <LangVersion>8.0</LangVersion>
+</PropertyGroup> -->
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
@@ -20,7 +25,6 @@
   <ItemGroup>
     <None Remove="Views\" />
     <None Remove="Services\" />
-    <None Remove="ViewModels\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microcharts.Forms" />
     <None Remove="Xamarin.CommunityToolkit" />
@@ -28,7 +32,6 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\Info.xaml.cs">
