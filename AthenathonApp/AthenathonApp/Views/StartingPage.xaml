@@ -15,31 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-
     <!--<StackLayout>
-
-                                          <Label Text="SDFSDFDS"/>
-            <CarouselView ItemsSource="{Binding Users}" Margin="0">
-                          <CarouselView.ItemTemplate>
-                              <DataTemplate>
-                                  <StackLayout>
-                                      <Frame CornerRadius="15" BorderColor="DarkBlue" Margin="20,0, 20, 0 " HeightRequest="140" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                                          <StackLayout>
-                                              <Label Text="test" FontSize="12"/>
-                                              <Label Text="{Binding email}" LineBreakMode="TailTruncation" MaxLines="2" FontSize="12"/> 
-                            </StackLayout>
-                                      </Frame>
-                                  </StackLayout>
-                              </DataTemplate>
-                          </CarouselView.ItemTemplate>
-            </CarouselView>
-    </StackLayout>-->
-         
-        
-
-
-
-    <StackLayout>
 
         <Frame Padding="24, 45,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
@@ -62,6 +38,23 @@
             <Label TextColor="#fff" FontSize="12" Text="Lorem ipsum dolor sit amet, consetur sadispscing elitr, lorem ipsum dolor sit amet, consetur sadispscing elitr Lorem ipsum dolor sit amet, consetur sadispscing elitr. "/>
         
         </StackLayout>
+    </StackLayout>-->
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+            <Label Text="Get JSON Data!!" HorizontalTextAlignment="Center" TextColor="#fff" FontSize="36"/>
+        </Frame>
+        <Button Text="Load data" Clicked="Button_Clicked"/>
+        <CollectionView x:Name="users">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+
+                    <Label Text="{Binding UserName}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </StackLayout>
 
 </ContentPage>
