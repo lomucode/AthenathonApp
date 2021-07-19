@@ -25,14 +25,14 @@ namespace AthenathonApp
             await Navigation.PushModalAsync(new Register());
         }
 
-        async void Button_Clicked(System.Object sender, System.EventArgs e)
-        {
-            var httpClient = new HttpClient();
-            var resultJson = await httpClient.GetStringAsync("http://192.168.178.27:5000/api/AspNetUsers");
+        //    async void Button_Clicked(System.Object sender, System.EventArgs e)
+        //    {
+        //        var httpClient = new HttpClient();
+        //        var resultJson = await httpClient.GetStringAsync("http://192.168.178.27:5000/api/AspNetUsers");
 
-            var resultUsers = JsonConvert.DeserializeObject<User[]>(resultJson);
-            users.ItemsSource = resultUsers;
-        }
+        //        var resultUsers = JsonConvert.DeserializeObject<User[]>(resultJson);
+        //        users.ItemsSource = resultUsers;
+        //    }
     }
 
 

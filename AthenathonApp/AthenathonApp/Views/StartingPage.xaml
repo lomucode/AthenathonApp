@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <!--<StackLayout>
+    <StackLayout>
 
         <Frame Padding="24, 45,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
@@ -38,9 +38,11 @@
             <Label TextColor="#fff" FontSize="12" Text="Lorem ipsum dolor sit amet, consetur sadispscing elitr, lorem ipsum dolor sit amet, consetur sadispscing elitr Lorem ipsum dolor sit amet, consetur sadispscing elitr. "/>
         
         </StackLayout>
-    </StackLayout>-->
+    </StackLayout>
 
-    <StackLayout>
+
+    <!--GET METHOD -->
+    <!--<StackLayout>
         <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
             <Label Text="Get JSON Data!!" HorizontalTextAlignment="Center" TextColor="#fff" FontSize="36"/>
         </Frame>
@@ -55,6 +57,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </StackLayout>
+    </StackLayout>-->
 
 </ContentPage>

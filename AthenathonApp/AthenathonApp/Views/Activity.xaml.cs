@@ -56,7 +56,7 @@ namespace AthenathonApp.Views
 
 
             isGettingLocation = true;
-
+             
 
             Location currentPosition;
             start = await Geolocation.GetLocationAsync(new

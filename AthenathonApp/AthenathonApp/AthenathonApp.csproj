@@ -21,6 +21,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Refit" Version="6.0.38" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -28,10 +29,13 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microcharts.Forms" />
     <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="API\" />
+    <None Remove="Refit" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+    <Folder Include="API\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\Info.xaml.cs">
