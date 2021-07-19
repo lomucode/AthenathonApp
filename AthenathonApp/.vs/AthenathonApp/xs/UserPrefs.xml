@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Activity.xaml">
     <Files>
-      <File FileName="AthenathonApp/Views/Framework.xaml" Line="9" Column="12" />
-      <File FileName="AthenathonApp/Views/Activity.xaml" Line="82" Column="23" />
-      <File FileName="AthenathonApp/Views/Activity.xaml.cs" Line="78" Column="2" />
-      <File FileName="AthenathonApp/Views/Framework.xaml.cs" Line="16" Column="2" />
-      <File FileName="AthenathonApp/Views/Home.xaml" Line="7" Column="6" />
+      <File FileName="AthenathonApp/Views/StartingPage.xaml" Line="51" Column="8" />
+      <File FileName="AthenathonApp/Views/Info.xaml" Line="183" Column="1" />
+      <File FileName="AthenathonApp/Views/Activity.xaml" Line="13" Column="47" />
+      <File FileName="AthenathonApp/Views/Login.xaml" />
+      <File FileName="AthenathonApp/Views/Info.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +13,11 @@
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Activity.xaml" expanded="True" selected="True" />
-                <Node name="Framework.xaml" expanded="True" />
+                <Node name="Activity.xaml" selected="True" />
+                <Node name="Info.xaml" expanded="True" />
               </Node>
-            </Node>
-            <Node name="AthenathonApp.Android" expanded="True">
-              <Node name="Properties" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="AthenathonApp.iOS" expanded="True" />
           </Node>
@@ -26,14 +25,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.AthenathonApp.Android PreferredExecutionTarget="Android.Nexus_6_API_30" />
-  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC9D815B-E18B-478F-890A-37ECA3B52C30" />
+  <MonoDevelop.Ide.ItemProperties.AthenathonApp.Android PreferredExecutionTarget="Android.nexus_6_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E36750A0-A0CA-4BF3-9701-D84B9EBFC8E3" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/Views/Home.xaml" relfile="AthenathonApp/Views/Home.xaml" line="32" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -15,13 +15,13 @@
         </Grid.ColumnDefinitions>
         <BoxView 
             />
-            <Grid BackgroundColor="Transparent">
+            <Grid BackgroundColor="#F4F8FB">
                         <Grid.RowDefinitions>
             <RowDefinition Height="38*" />
             <RowDefinition Height="62*" />
         </Grid.RowDefinitions>
                         <BoxView/>
-                <Frame Padding="15,35,0,0 " BackgroundColor="Transparent" HasShadow="False" >
+                <Frame Padding="15,35,0,0 " BackgroundColor="#F4F8FB" HasShadow="False" >
                     <StackLayout Padding=" 0,0,0,0" HorizontalOptions="Start" >
                     <Label Text="Europe Day" FontSize="35" TextColor="DarkBlue"/>
                     <Label Text="ATHENATHON" FontSize="40" FontAttributes="Bold" TextColor="DarkBlue" />
@@ -63,12 +63,12 @@
                    <BoxView Grid.Row="3" Margin="30,0,30,0" Grid.ColumnSpan="2"/>
                    <Entry Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="Passwort bestätigen" IsPassword="True" WidthRequest="50"/>
                    <BoxView Grid.Row="4" Grid.ColumnSpan="2" />
-                    <Button Grid.Row="4" Grid.ColumnSpan="2" Text="Registrieren" TextColor="Gray" BackgroundColor="LightPink" Margin="45, 10, 45, 0" CornerRadius="20" Clicked="PushHome"/>
+                    <Button Grid.Row="4" Grid.ColumnSpan="2" Text="Registrieren" TextColor="Gray" BackgroundColor="#FE8C8D" Margin="45, 10, 45, 0" CornerRadius="20" Clicked="PushHome"/>
                     <BoxView Grid.Row="5" Grid.ColumnSpan="2" />
                    <StackLayout Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="Center">
                    <Label Text="Du hast schon ein Konto?" TextColor="#000" FontSize="14" VerticalOptions="Center"
                          />
-                        <Button Clicked="ButtonLogin" Text="Melde dich an."/>
+                        <Button Clicked="ButtonLogin" Text="Melde dich an." TextColor="DarkBlue" FontAttributes="bold"/>
                     </StackLayout>
 
             </Grid>

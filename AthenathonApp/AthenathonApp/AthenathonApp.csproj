@@ -16,6 +16,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Forms.BackgroundVideoView" Version="0.0.0.22" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -24,6 +25,7 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microcharts.Forms" />
     <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="Xamarin.Forms.BackgroundVideoView" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />

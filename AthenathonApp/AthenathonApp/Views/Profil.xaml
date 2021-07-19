@@ -33,7 +33,7 @@
                 </Frame>
             </StackLayout>
         <Label Text="John Doe"  FontSize="20" Style="{StaticResource textStyle}"/>
-        <Label Text="Stundent"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <Label Text="Student"  FontSize="18" Style="{StaticResource textStyle}"/>
         <Label Text="Universität Siegen"  FontSize="18" Style="{StaticResource textStyle}"/>
         <!--UniCoins-->
         <Button Clicked="ChangePassword" Text="Passwort ändern" TextColor="Orange" HorizontalOptions="Center" Margin="0, 40,0,0" FontSize="24" FontAttributes="Bold"/>

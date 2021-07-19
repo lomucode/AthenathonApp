@@ -3,19 +3,19 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AthenathonApp.Views.Activity"
-    Title="Aktivity" Icon="outline_bolt_black_24dp.png" BackgroundColor="AliceBlue">
+    Title="Aktivity" Icon="outline_bolt_black_24dp.png" >
     <ContentPage.Content>
               
                 <StackLayout HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#F4F8FB">
                 
                     <Frame BackgroundColor="#D387E2" HeightRequest="150" HasShadow="False">
                         
-                        <Label Text="Hey, {Name}!" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="center" Margin="0,30,0,0"/>
+                        <Label Text="Hey, Anni!" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="center" Margin="0,30,0,0"/>
                     </Frame>
 
                     <Frame BackgroundColor="White" Padding="36" CornerRadius="36" Margin="60,-60,60,0" HasShadow="False">
                         <StackLayout>
-                            <Label Text="ATHENATHON GESAMTFORTSCHRITT" HorizontalTextAlignment="center" TextColor="Black" FontSize="18" FontAttributes="bold" CharacterSpacing="0.5"/>
+                            <Label Text="ATHENATHON GESAMTFORTSCHRITT" HorizontalTextAlignment="center" TextColor="Black" FontSize="17" FontAttributes="bold" CharacterSpacing="0.5"/>
                             <Label Text="9.310" HorizontalTextAlignment="center" TextColor="Black" FontSize="52" FontAttributes="bold"/>
                             <Label Text="Weiter so!" HorizontalTextAlignment="center" TextColor="#989898" FontSize="18" FontAttributes="bold"/>
                         </StackLayout>
