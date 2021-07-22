@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:AthenathonApp.Views" xmlns:local="clr-namespace:AthenathonApp.Services"
     x:Class="AthenathonApp.Views.Login">
+
+    <!--<ContentPage.BindingContext>
+        <local:PostUser/>
+    </ContentPage.BindingContext>-->
+
     <ContentPage.Content>
 
-            <Grid BackgroundColor="#fffff">
+            <Grid BackgroundColor="#f5f4f5">
         <Grid.RowDefinitions>
             <RowDefinition Height="55*" />
             <RowDefinition Height="45*" />
@@ -15,7 +20,7 @@
         </Grid.ColumnDefinitions>
         <BoxView 
             />
-            <Grid BackgroundColor="Transparent" RowSpacing="0">
+            <Grid BackgroundColor="#f5f4f5" RowSpacing="0">
                         <Grid.RowDefinitions>
             <RowDefinition Height="38*" />
             <RowDefinition Height="62*" />
@@ -54,20 +59,22 @@
                     </Grid.ColumnDefinitions>
 
                     <BoxView/>
+                    <!--<Label Text="Anmelden" FontSize="28" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <BoxView Grid.Column="1" Margin="30,0,30,0"/>-->
                     <Label Text="Anmelden" FontSize="28" FontAttributes="Bold" VerticalOptions="Center"/>
                     <BoxView Grid.Column="1" Margin="30,0,30,0"/>
-                   <Button Grid.Column="1" Text="->" BackgroundColor="DarkRed" CornerRadius="25" WidthRequest="50" Clicked="PushHome"/>
+                   <Button Grid.Column="1" Text="->" BackgroundColor="#fe8c8d" CornerRadius="25" WidthRequest="50" Clicked="PushHome"/>
                     <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="30,0,30,0"/>
-                   <Entry Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="E-Mail" WidthRequest="50"/>
+                   <Entry  Text="{Binding Email}" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="E-Mail" WidthRequest="50"/>
                    <BoxView Grid.Row="2" Margin="30,0,30,0" Grid.ColumnSpan="2"/>
-                   <Entry Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="Password" IsPassword="True" WidthRequest="50"/>
+                   <Entry Text="{Binding PasswordHash}" Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="#ffffff" Placeholder="Password" IsPassword="True" WidthRequest="50"/>
                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="30,0,30,0"/>
-                   <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Passwort vergessen?" TextColor="Red" TextDecorations="Underline" FontSize="14"/>
+                   <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Passwort vergessen?" TextColor="#fe8c8d" TextDecorations="Underline" FontSize="14"/>
                    <BoxView Grid.Row="4" Grid.ColumnSpan="2" Margin="30,0,30,0" />
                     <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="Center">
                    <Label Text="Du hast noch kein Konto?" TextColor="#000" FontSize="14" VerticalOptions="Center"
                          />
-                        <Button Clicked="ButtonRegister" Text="Registriere dich hier."/>
+                        <Button Clicked="ButtonRegister" Text="Registriere dich."/>
                     </StackLayout>
             </Grid>
 

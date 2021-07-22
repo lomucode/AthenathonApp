@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+          
+           
              x:Class="AthenathonApp.StartingPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+            >
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -15,12 +19,31 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            
+        </Grid.RowDefinitions>
+
+        <xct:MediaElement x:Name="mediaElement"
+                          Grid.Row="0"
+                          Source="ms-appx:///video.mp4"
+                          ShowsPlaybackControls="False"
+                      IsLooping="True" Aspect="AspectFill" AutoPlay= "True"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                          />
+   
+
+    
+   
+
+
     <StackLayout>
 
         <Frame Padding="24, 45,24, 24" CornerRadius="0" VerticalOptions="Center" HasShadow="False">
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-               <Frame CornerRadius="15" HeightRequest="30" WidthRequest="30" IsClippedToBounds="True" HorizontalOptions="Start" Padding="0" HasShadow="False" BackgroundColor="Red">
-                <Image Source="angel_galaxy-wallpaper-2560x1440.jpg" Aspect="AspectFill" />
+               <Frame CornerRadius="15" HeightRequest="30" WidthRequest="30" IsClippedToBounds="True" HorizontalOptions="Start" Padding="0" HasShadow="False" >
+                <Image Source="germany_flag.png" Aspect="AspectFill" />
                </Frame>
             <Label FontAttributes="Bold" Text="Deutschland" VerticalOptions="Center"/>
             </StackLayout>
@@ -29,8 +52,9 @@
         <Label Text="Europe Day" FontSize="42" Padding="30,20,30,0" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
         <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,0,30,10" TextColor="DarkBlue"/>
         </StackLayout>
+  
       <StackLayout VerticalOptions="EndAndExpand"  Padding="0 ,200, 0, 0">
-            <Button Text="Registrieren" FontSize="20" FontAttributes="Bold" Clicked="ButtonRegister" BackgroundColor="Red" Style="{StaticResource buttonStyle}"/>
+            <Button Text="Registrieren" FontSize="20" FontAttributes="Bold" Clicked="ButtonRegister" BackgroundColor="#FE8C8D" Style="{StaticResource buttonStyle}"/>
             <Button Text="Anmelden" FontSize="20" FontAttributes="Bold" Clicked="ButtonLogin" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
       </StackLayout>
          <StackLayout Orientation="Horizontal" Padding="10,20,10,30" VerticalOptions="EndAndExpand" BackgroundColor="#000">
@@ -40,23 +64,9 @@
         </StackLayout>
     </StackLayout>
 
+         </Grid>
 
-    <!--GET METHOD -->
-    <!--<StackLayout>
-        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
-            <Label Text="Get JSON Data!!" HorizontalTextAlignment="Center" TextColor="#fff" FontSize="36"/>
-        </Frame>
-        <Button Text="Load data" Clicked="Button_Clicked"/>
-        <CollectionView x:Name="users">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout>
-
-                    <Label Text="{Binding UserName}"/>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>-->
+       
+           
 
 </ContentPage>

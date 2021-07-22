@@ -8,29 +8,32 @@
 
 
     <ContentPage.Content>
+
             <ScrollView>
         <StackLayout Margin=" 10,0,10,0">
         <Label Text="Dashboard" HorizontalTextAlignment="Start" FontSize="36" FontAttributes="Bold" />
 
                 <Label Text="News" Padding="0" Margin="0"/>
-            <StackLayout HeightRequest="200" Margin="0" Padding="0">
+            <StackLayout HeightRequest="150" Margin="0" Padding="0">
+        <CarouselView x:Name="NewsCarouselView">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame BackgroundColor="DarkBlue" CornerRadius="15" Margin="20, 10,20,10" Padding="0" HeightRequest="140">
+                            <StackLayout Margin="10">
+                                <Label TextColor="#fff" Text="{Binding Title}" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" />
 
-            <CarouselView ItemsSource="{Binding Monkeys}" Margin="0">
-                          <CarouselView.ItemTemplate>
-                              <DataTemplate>
-                                  <StackLayout>
-                                      <Frame CornerRadius="15" BorderColor="DarkBlue" Margin="20,0, 20, 0 " HeightRequest="140" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                                          <StackLayout>
-                                              <Label Text="{Binding Name}" FontSize="12"/>
-                                              <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="90" WidthRequest="400" Margin="10, 0 , 10, 0" HorizontalOptions="Center" />
-                                              <Label Text="{Binding Details}" LineBreakMode="TailTruncation" MaxLines="2" FontSize="12"/> 
+                                <Label TextColor="#fff" Text="{Binding Content}" />
                             </StackLayout>
-                                      </Frame>
-                                  </StackLayout>
-                              </DataTemplate>
-                          </CarouselView.ItemTemplate>
-            </CarouselView>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
             </StackLayout>
+
+
 
                 <Label Text="Deine Aktivität" />
             <StackLayout HeightRequest="140">
@@ -94,19 +97,21 @@
                         <StackLayout class="activity">
                 <Label Text="Letzte Aktivität (7 Tage)"/>
                 <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
-                    <microcharts:ChartView x:Name="chartViewLine" HeightRequest="150"/>
+                    <microcharts:ChartView x:Name="LastDaysById" HeightRequest="150"/>
                 </StackLayout>
             </StackLayout>
-                                    <StackLayout class="activity">
+
+            <StackLayout class="activity">
                 <Label Text="Letzte Aktivität - Gesamt (7 Tage)"/>
                 <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
-                    <microcharts:ChartView x:Name="chartViewPie" HeightRequest="150"/>
+                    <microcharts:ChartView x:Name="TotalLastDays" HeightRequest="150"/>
                 </StackLayout>
             </StackLayout>
-                                    <StackLayout class="activity">
+
+            <StackLayout class="activity">
                 <Label Text="Top Sportarten (nach Teilnehmern)"/>
-                <StackLayout class="activityItems" HeightRequest="200" BackgroundColor="Orange">
-                    
+                               <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
+                    <microcharts:ChartView x:Name="AllActivities" HeightRequest="150"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

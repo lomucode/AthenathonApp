@@ -1,34 +1,39 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Services/User.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Profil.xaml">
     <Files>
-      <File FileName="AthenathonApp/API/IMyAPI.cs" Line="18" Column="2" />
-      <File FileName="AthenathonApp/Views/Login.xaml.cs" Line="12" Column="51" />
-      <File FileName="AthenathonApp/Views/Login.xaml" Line="1" Column="1" />
-      <File FileName="AthenathonApp/Services/User.cs" Line="1" Column="1" />
+      <File FileName="AthenathonApp/Views/Home.xaml" Line="24" Column="75" />
+      <File FileName="AthenathonApp/Views/Home.xaml.cs" />
+      <File FileName="AthenathonApp.iOS/Main.cs" />
+      <File FileName="AthenathonApp/Views/Info.xaml" Line="166" Column="44" />
+      <File FileName="AthenathonApp/Views/Profil.xaml" Line="36" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
-              <Node name="API" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="User.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Login.xaml" expanded="True" />
-                <Node name="StartingPage.xaml" expanded="True" />
+                <Node name="Activity.xaml" expanded="True" />
+                <Node name="Info.xaml" expanded="True" />
+                <Node name="Profil.xaml" selected="True" />
               </Node>
             </Node>
-            <Node name="AthenathonApp.Android" expanded="True" />
-            <Node name="AthenathonApp.iOS" expanded="True" />
+            <Node name="AthenathonApp.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="AthenathonApp.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.AthenathonApp.Android PreferredExecutionTarget="Android.Nexus_6_API_30" />
-  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BBEF503-5DC3-49AA-B05C-EF1E14B04C8F" />
+  <MonoDevelop.Ide.ItemProperties.AthenathonApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC9D815B-E18B-478F-890A-37ECA3B52C30" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

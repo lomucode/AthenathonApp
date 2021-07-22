@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Net.Http;
 using AthenathonApp.Services;
 using Microcharts;
@@ -12,53 +13,25 @@ namespace AthenathonApp.Views
 {
     public partial class Home : ContentPage
     {
-        private readonly ChartEntry[] entries = new[]
-        {
-            new ChartEntry(212)
-            {
-                Label="Montag",
-                ValueLabel="112",
-                Color = SKColor.Parse("2c3e50")
-            },
-            new ChartEntry(512)
-            {
-                Label="Dienstag",
-                ValueLabel="648",
-                Color = SKColor.Parse("#77d065")
-            }
-        };
+        //GET FUNCTION DATA NEWS
+        private readonly string newsUrl = "http://192.168.2.167:5000/api/News";
+        private readonly HttpClient httpClientNews = new HttpClient();
+        public ObservableCollection<News> TheNews { get; set; } = new ObservableCollection<News>();
 
+        //GET FUNCTION DISTANZDATEN TRACKING
+        private readonly string distanceUrl = "http://192.168.2.167:5000/api/DistanDatens";
+        private readonly HttpClient httpClientDistanceData = new HttpClient();
+        public ObservableCollection<DistanceEntry> DistanceEntries { get; set; } = new ObservableCollection<DistanceEntry>();
 
-        private const string monkeyUrl = "https://montemagno.com/monkeys.json";
-        private readonly HttpClient httpClient = new HttpClient();
-
-
-        public ObservableCollection<Monkey> Monkeys { get; set; } = new ObservableCollection<Monkey>();
+        List<string[]> act = new List<string[]>();
+        List<string[]> activitiesToday = new List<string[]>();
+        
 
         public Home()
         {
             InitializeComponent();
-            chartViewLine.Chart = new LineChart { Entries = entries,
-                ValueLabelOrientation = Orientation.Horizontal,
-                LabelTextSize = 30, LabelOrientation=Orientation.Horizontal };
-
-            chartViewPie.Chart = new PieChart
-            {
-                Entries = entries,
-                //ValueLabelOrientation = Orientation.Horizontal,
-                LabelTextSize = 30,
-                //LabelOrientation = Orientation.Horizontal
-            };
+            NewsCarouselView.ItemsSource = TheNews;
             BindingContext = this;
-            var names = new List<string[]>
-            {
-                new string[]{"Laufen", "30,4"},
-                new string[]{"Skaten", "30,4"},
-                new string[]{"Ski fahren", "30,4"},
-                new string[]{"Schwimmen", "30,4"},
-            };
-            MainCarouselView.ItemsSource = names;
-            LastActivityView.ItemsSource = names;
 
         }
 
@@ -66,16 +39,144 @@ namespace AthenathonApp.Views
         {
             base.OnAppearing();
 
-            var monkeyJson = await httpClient.GetStringAsync(monkeyUrl);
-            var monkeys = JsonConvert.DeserializeObject<Monkey[]>(monkeyJson);
+            //Setup News
+            var newsObj = await httpClientNews.GetStringAsync(newsUrl);
+            var newsResult = JsonConvert.DeserializeObject<News[]>(newsObj);
 
-            Monkeys.Clear();
+            TheNews.Clear();
 
-            foreach (var monkey in monkeys)
+            foreach (var n in newsResult)
             {
-                Monkeys.Add(monkey);
+                TheNews.Add(n);
             }
-        }
 
+            //Setup Distance Data
+            var distanceObj = await httpClientDistanceData.GetStringAsync(distanceUrl);
+            var distanceResult = JsonConvert.DeserializeObject<DistanceEntry[]>(distanceObj);
+            DateTime thisDay = DateTime.Today;
+            string[] sportArts = { "Laufen", "Spazieren", "Schwimmen", "Fahrrad fahren", "Hiking", "Indoor-Biking", "Sonstiges" };
+
+
+            //Activities
+            var ent = new List<ChartEntry>();
+            var entTotalActivity = new List<ChartEntry>();
+            var entById = new List<ChartEntry>();
+            var myActivities = new List<string[]>();
+            var myActivitiesToday = new List<string[]>();
+            double[] lastSevenDays = { 0, 0, 0, 0, 0, 0, 0 };
+            double[] lastSevenDaysById = { 0, 0, 0, 0, 0, 0, 0 };
+            double[] entireActivities = { 0, 0, 0, 0, 0, 0};
+
+            DistanceEntries.Clear();
+
+            foreach (var d in distanceResult)
+            {
+                DistanceEntries.Add(d);
+
+                //last seven days activity in km 
+                int dif = 6 - (DateTime.Today - d.DistanDatenDatum).Days;
+                if (dif >= 0)
+                {
+                    lastSevenDays[dif] += d.Distanz; 
+                }
+                //last seven days activity in km by userId
+                if(dif >= 0 && "1b993051-aaee-497a-aae4-693b85c37518" == d.UserId)
+                {
+                    lastSevenDaysById[dif] += d.Distanz;
+
+                    //last single activites
+                    string[] temp = new string[] { d.DistanzArt, d.Distanz.ToString("0.00") };
+                    myActivities.Add(temp);
+
+                    //las single activites today
+                    if(DateTime.Today == d.DistanDatenDatum)
+                    {
+                        myActivitiesToday.Add(temp);
+                    }
+                }
+
+                //Sports distribution
+                int index = Array.IndexOf(sportArts, d.DistanzArt);
+                entireActivities[index] += d.Distanz;
+            }
+            //if no data available
+            if (myActivities.Count == 0)
+            {
+                string[] temp = new string[] { "Noch nichts beigetragen :(", "0" };
+                myActivities.Add(temp);
+            }
+            if (myActivitiesToday.Count == 0)
+            {
+                string[] temp = new string[] { "Heute nichts!:(", "0" };
+                myActivitiesToday.Add(temp);
+            }
+
+            act = myActivities;
+            activitiesToday = myActivitiesToday;
+
+            MainCarouselView.ItemsSource = act;
+            LastActivityView.ItemsSource = activitiesToday;
+
+            //FOR LAST SEVEN DAYS BY USER-ID
+            for (var j = 0; j < lastSevenDaysById.Length; j++)
+            {
+
+                var entryActivityTotal = new ChartEntry((float)lastSevenDaysById[j])
+                {
+                    Label = DateTime.Today.AddDays(j - 6).ToString("ddd"),
+                    ValueLabel = lastSevenDaysById[j].ToString("0.00"),
+                    Color = SKColor.Parse("#3262a8"),
+                    ValueLabelColor = SKColor.Parse("#3262a8"),
+                };
+                entById.Add(entryActivityTotal);
+            }
+            var chartById = new LineChart() { Entries = entById, LabelTextSize = 30, };
+            this.LastDaysById.Chart = chartById;
+
+
+            //FOR LAST SEVEN DAYS GRAFIC
+            for (var j = 0; j < lastSevenDays.Length; j++)
+            {
+
+                var entryActivityTotal = new ChartEntry((float)lastSevenDays[j])
+                {
+                    Label = DateTime.Today.AddDays(j - 6).ToString("ddd"),
+                    ValueLabel = lastSevenDays[j].ToString("0.00"),
+                    Color = SKColor.Parse("#3262a8"),
+                    ValueLabelColor = SKColor.Parse("#3262a8"),
+                };
+                entTotalActivity.Add(entryActivityTotal);
+            }
+            var chartTotal = new LineChart() { Entries = entTotalActivity, LabelTextSize = 30, };
+            this.TotalLastDays.Chart = chartTotal;
+
+
+            //FOR SPORTS DISTRIBUTION GRAFIC
+            for (var i=0; i < entireActivities.Length; i++)
+            {
+                Random ran = new Random();
+                SKColor randomColor = SKColor.FromHsv(ran.Next(256), ran.Next(256), ran.Next(256));
+
+                if (entireActivities[i] > 0)
+                {
+
+                var entry = new ChartEntry((float)entireActivities[i])
+                {
+                    Label = sportArts[i],
+                    ValueLabel = entireActivities[i].ToString("0.00"),
+                    Color = randomColor,
+                    ValueLabelColor = randomColor
+                };
+
+                ent.Add(entry);
+                }
+            }
+
+            var chart = new DonutChart() { Entries = ent, LabelTextSize = 30, };
+            this.AllActivities.Chart = chart;
+
+
+
+        }
     }
 }

@@ -7,12 +7,12 @@ namespace AthenathonApp.API
 {
    interface IMyAPI
     {
-        //http://192.168.187.202:5000/api/Login
+        //http://192.168.178.27:5000/api/Login
 
-        [Post("http://192.168.187.202:5000/api/Register")]
-        Task<User> RegisterUser([Body] User user);
+        [Post("/api/Register")]
+        Task<PostUser> RegisterUser([Body] PostUser user);
 
-        [Post("http://192.168.187.202:5000/api/Login")]
-        Task<User> LoginUser([Body] User user);
+        [Post("/api/Login")]
+        Task<PostUser> LoginUser([Body] PostUser user);
     }
 }

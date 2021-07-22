@@ -8,9 +8,13 @@ namespace AthenathonApp.Views
 {
     public partial class Framework : TabbedPage
     {
-        public Framework()
+        public string _id;
+
+        public Framework(string id)
         {
             InitializeComponent();
+            _id = id;
+            BindingContext = _id;
         }
     }
 }

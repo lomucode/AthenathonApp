@@ -5,33 +5,47 @@
         xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 
     x:Class="AthenathonApp.Views.Info"
-    Title="Info" Icon="outline_info_black_24dp.png" BackgroundColor="AliceBlue">
+    Title="Info" Icon="outline_info_black_24dp.png" BackgroundColor="#F4F8FB">
 
   <ContentPage.Content>
-        
-              <ScrollView>
+
+        <ScrollView>
             <StackLayout  Padding="18">
-                
+
 
                 <Label Text="Info"  HorizontalTextAlignment="center" VerticalTextAlignment="Center"  TextColor="Black" FontSize="32" FontAttributes="bold" Margin="0,17,0,0"/>
- 
-                    
 
- <xct:Expander>
-    <xct:Expander.Header>
-        <Label 
-              Text="Die Universitäten"
-               TextColor="Black" FontSize="23"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,50,20,0" />
-        
-        
-    </xct:Expander.Header>
 
-    
-         
-        
-    
- 
-        <Label Text= "Hellenic Mediterranean University&#10;Das Technologische Bildungsinstitut von Kreta wurde 1983 gegründet, um den Studenten in Griechenland eine höhere technologische Ausbildung zu bieten. Es befindet sich in Heraklion und hat Zweigstellen in anderen Städten wie Kreta, Chania, Rethymnon, Ierapetra, Sitia und Agios Nikolaos. Nach den Gesetzen Ν.2916/2001, Ν.3549/2007, Ν.3685/2008, Ν.3794/2009 ist sie eine höhere Bildungseinrichtung (griechisch: Α.Ε.Ι.) mit vollem Universitätsstatus.&#10;https://www.hmu.gr/en
+                                           
+                    <xct:Expander>
+                                     
+                    <xct:Expander.Header>
+                       <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+
+
+                            </Grid.RowDefinitions>
+                            <BoxView Grid.Column="0" Grid.Row="0"  BackgroundColor="#f8933b" WidthRequest="3"  HorizontalOptions="Start" VerticalOptions="End"/>
+                            <StackLayout>
+                                <Label Text="Die Universitäten" FontSize="23" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" Margin="20,50,20,0"></Label>
+
+                            </StackLayout>
+
+                        </Grid>
+
+                    </xct:Expander.Header>
+
+
+
+
+
+
+                    <Label Text= "Hellenic Mediterranean University&#10;Das Technologische Bildungsinstitut von Kreta wurde 1983 gegründet, um den Studenten in Griechenland eine höhere technologische Ausbildung zu bieten. Es befindet sich in Heraklion und hat Zweigstellen in anderen Städten wie Kreta, Chania, Rethymnon, Ierapetra, Sitia und Agios Nikolaos. Nach den Gesetzen Ν.2916/2001, Ν.3549/2007, Ν.3685/2008, Ν.3794/2009 ist sie eine höhere Bildungseinrichtung (griechisch: Α.Ε.Ι.) mit vollem Universitätsstatus.&#10;https://www.hmu.gr/en
                      &#10;&#10;Polytechnisches Institut von Porto&#10;Das Instituto Politécnico do Porto (Polytechnisches Institut von Porto), auch bezeichnet als Politécnico do Porto (Porto Polytechnic) und P.PORTO (seit 2016, für die Namensgebung und Branding-Zwecke), ist eine Zusammensetzung von mehreren polytechnischen Schulen in Porto Region.  Das Porto Polytechnic entwickelte sich als eine metropolitane Institution mit Schulen in Porto, Matosinhos, Póvoa de Varzim, Vila do Conde und Felgueiras.&#10;https://www.ipp.pt/
                      &#10;&#10;Universität Maribor&#10;Die Universität Maribor (slowenisch: Univerza v Mariboru) ist die zweitgrößte Universität Sloweniens und wurde 1975 in Maribor, Slowenien, gegründet. Sie hat derzeit 17 Fakultäten.&#10;https://www.um.si/Strani/default.aspx
                      &#10;&#10;Universität von Orléans&#10;Die Universität von Orléans (französisch: Université d'Orléans) ist eine französische Universität, in der Akademie von Orléans und Tours. Seit Juli 2015 ist sie Mitglied des regionalen Hochschulverbundes Leonardo da Vinci consolidated University.&#10;https://www.univ-orleans.fr/fr
@@ -42,39 +56,88 @@
 
           TextColor="Black" FontSize="15"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,20,0,0"
                 />
-     
-    
-</xct:Expander>
-
-          
-      
 
 
- 
+                </xct:Expander>
 
- <xct:Expander>
-    <xct:Expander.Header>
-        <Label Text="Über Athenathon"
-              TextColor="Black" FontSize="23"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,50,20,0" />
-        
-    </xct:Expander.Header>
- 
-        <Label Text= "Die sieben Universitäten der ATHENA European University sind stolz darauf, den Europe-Day ATHENATHON zu starten, ein Sportereignis mit dem Ziel, eine Strecke von 11.000 km zu erreichen.
+
+
+
+
+
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+
+
+                            </Grid.RowDefinitions>
+                            <BoxView Grid.Column="0" Grid.Row="0"  BackgroundColor="#f8933b" WidthRequest="3"  HorizontalOptions="Start" VerticalOptions="End"/>
+
+
+
+
+
+
+
+                            <StackLayout>
+                                <Label Text="Über Athenathon" FontSize="23" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" Margin="20,50,20,0"></Label>
+
+
+
+
+                            </StackLayout>
+
+                        </Grid>
+
+                    </xct:Expander.Header>
+
+                    <Label Text= "Die sieben Universitäten der ATHENA European University sind stolz darauf, den Europe-Day ATHENATHON zu starten, ein Sportereignis mit dem Ziel, eine Strecke von 11.000 km zu erreichen.
 Innerhalb eines Monats, vom 9. April bis zum 9. Mai, laden wir die Studenten und Mitarbeiter jeder Universität und jede Person, die teilnehmen möchte, dazu ein, an unserer Veranstaltung teilzunehmen und unser 11 000 km-Ziel zu erreichen, das die Entfernung zwischen den sieben Standorten unserer Partnerschaftsuniversitäten darstellt.
 " TextColor="Black" FontSize="15"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,20,0,0"
                 />
-     
-    
-</xct:Expander>
 
- <xct:Expander>
-    <xct:Expander.Header>
-        <Label Text="FAQ (Allgemein)"
-               TextColor="Black" FontSize="23"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,50,20,0" 
-               />
-    </xct:Expander.Header>
- 
-        <Label Text= "Wer kann am ATHENATHON teilnehmen? &#10;Wir laden die Studierenden jeder ATHENA-Hochschule sowie die Mitarbeiter (akademische, administrative und andere) ein, an unserer Veranstaltung teilzunehmen. Aber auch alle anderen Interessierten sind herzlich zur Teilnahme eingeladen.&#10;&#10;Wie kann ich am ATHENATHON teilnehmen?
+
+                </xct:Expander>
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+
+
+                            </Grid.RowDefinitions>
+                            <BoxView Grid.Column="0" Grid.Row="0"  BackgroundColor="#f8933b" WidthRequest="3"  HorizontalOptions="Start" VerticalOptions="End"/>
+
+
+
+
+
+
+
+                            <StackLayout>
+                                <Label Text="FAQ (Allgemein)" FontSize="23" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" Margin="20,50,20,0"></Label>
+
+
+
+
+                            </StackLayout>
+
+                        </Grid>
+                    </xct:Expander.Header>
+
+                    <Label Text= "Wer kann am ATHENATHON teilnehmen? &#10;Wir laden die Studierenden jeder ATHENA-Hochschule sowie die Mitarbeiter (akademische, administrative und andere) ein, an unserer Veranstaltung teilzunehmen. Aber auch alle anderen Interessierten sind herzlich zur Teilnahme eingeladen.&#10;&#10;Wie kann ich am ATHENATHON teilnehmen?
 &#10;Melde dich in unserer App an: Europe Day ATHENATHON. Deine Aktivitäten werden automatisch für das Gesamtergebnis des ATHENATHON gezählt.&#10;&#10;Welche Informationen werden in der App verwendet?&#10;Mit dem Beitritt zum Europe Day ATHENATHON stimmst du zu, dass der Club-Administrator (ATHENA European University) die Art der Aktivität (Gehen, Laufen, Radfahren etc.) aufzeichnet und deine Distanz zur ATHENATHON-Kilometerzahl hinzufügt. ATHENA European University verwendet weder deinen Standort noch andere geografische Informationen.&#10;&#10;Ist meine Privatsphäre geschützt? 
 &#10;Alle Daten, die für den Europe Day ATHENATHON 2021 über die App und individuell gewählte und Social-Media-Posts gesammelt werden, werden nur für den Zweck der Veranstaltung in Übereinstimmung mit der Datenschutzverordnung (EU) 2016/679 des Europäischen Parlaments und des Rates der Europäischen Union verwendet. Bitte lies unsere Erklärung zum Datenschutz.
 &#10;&#10;Kann ich mehrfach beitragen?&#10;Ja, absolut! Du kannst vom 9. April bis zum 9. Mai so oft teilnehmen, wie du möchtest.  
@@ -84,12 +147,12 @@ Innerhalb eines Monats, vom 9. April bis zum 9. Mai, laden wir die Studenten und
 &#10;Solange die Sportart, die du ausübst, kohlenstofffrei ist und wenn du dabei eine Strecke zurücklegst, werden wir deine Kilometer berücksichtigt. Vergiss nicht, ein Foto zu machen, um uns deinen Sport zu zeigen!&#10;&#10;https://athena-uni.eu/137416-2/
 " TextColor="Black" FontSize="15"   VerticalOptions="Center" HorizontalOptions="Start" Margin="20,20,0,0"
                 />
-     
-    
-</xct:Expander>
-   
 
-    
+
+                </xct:Expander>
+
+
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -99,38 +162,32 @@ Innerhalb eines Monats, vom 9. April bis zum 9. Mai, laden wir die Studenten und
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                   
-                        <Image Source="info.JPG"  HeightRequest="170"
+
+                    <Image Source="info.jpg"  HeightRequest="170"
            WidthRequest="170"
                                        Grid.Row="1"  Margin="0,10,0,0"></Image>
-                        <Button Grid.Column="1" Grid.Row="1" Text="Impressum" FontSize="12" BackgroundColor="AliceBlue" TextColor="Black" Margin="0,10,0,0"></Button>
-                        <Button Grid.Column="2" Grid.Row="1" Text="Datenschutz" FontSize="12" BackgroundColor="AliceBlue" TextColor="black" Margin="0,10,0,0"></Button>
-                    
+                    <Button Grid.Column="1" Grid.Row="1" Text="Impressum" FontSize="12" BackgroundColor="#F4F8FB" TextColor="Black" Margin="0,10,0,0"></Button>
+                    <Button Grid.Column="2" Grid.Row="1" Text="Datenschutz" FontSize="12" BackgroundColor="#F4F8FB" TextColor="black" Margin="0,10,0,0"></Button>
+
                 </Grid>
 
-                 <StackLayout Orientation="Horizontal" Padding="10,0,10,30" VerticalOptions="EndAndExpand" >
-        
-            <Label Text="2021 ATHENA European University - All rights reserved." TextColor="Black" FontSize="10"/>
-        
-        </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10,0,10,30" VerticalOptions="EndAndExpand" >
 
-                
-                     
+                    <Label Text="2021 ATHENA European University - All rights reserved." TextColor="Black" FontSize="10"/>
+
+                </StackLayout>
+
+
+
 
 
 
             </StackLayout>
 
-            
+
         </ScrollView>
-        </ContentPage.Content>
-            
-        
+    </ContentPage.Content>
 
-        
+
+
 </ContentPage>
-
-
-
-  
-
