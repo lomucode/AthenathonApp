@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using AthenathonApp.Services;
+using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -11,24 +14,91 @@ namespace AthenathonApp.Views
 {
     public partial class Activity : ContentPage
     {
+        //GET FUNCTION DISTANZDATEN TRACKING
+        private readonly string distanceUrl = "http://192.168.2.167:5000/api/DistanDatens";
+        private readonly HttpClient httpClientDistanceData = new HttpClient();
+        public ObservableCollection<DistanceEntry> DistanceEntries { get; set; } = new ObservableCollection<DistanceEntry>();
+
+        PostDistanceEntry entryDistance = new PostDistanceEntry();
+
         bool isGettingLocation;
         double distance = 0;
+       
         Location start;
         Stopwatch stopwatch;
 
 
-        public Activity()
+            public Activity()
         {
-
             InitializeComponent();
+            var data = new PostDistanceEntry();
+            entryDistance = data;
+            BindingContext = data;
+
             stopwatch = new Stopwatch();
 
+        }
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            var distanceObj = await httpClientDistanceData.GetStringAsync(distanceUrl);
+            var distanceResult = JsonConvert.DeserializeObject<DistanceEntry[]>(distanceObj);
+            double temp = 0;
+
+            foreach (var d in distanceResult)
+            {
+                temp += d.Distanz;
+            }
+            entryDistance.TotalDistance = temp.ToString("0.00");
+        }
+
+        public async Task SubmitRunningData()
+        {
+            if(distance > 0)
+            {
+                entryDistance.Distanz = distance.ToString();
+            }
+
+            PostDistanceEntry e = new PostDistanceEntry
+            {
+                Distanz = entryDistance.Distanz,
+                DistanzArt = entryDistance.DistanzArt,
+                UserId = "1b993051-aaee-497a-aae4-693b85c37518",
+                DistanDatenDatum = DateTime.Today,
+            };
+            if (e.Distanz != null && e.DistanzArt != null)
+            {
+                
+                var httpClient = new HttpClient();
+                var json = JsonConvert.SerializeObject(e);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.2.167:5000/api/DistanDatens", content);
+                if (response.IsSuccessStatusCode)
+                {
+                await DisplayAlert("Super", "Deine Daten wurden erfolgreich übermittelt :)", "OK");
+                    entryDistance.TotalDistance = (Convert.ToDouble(entryDistance.TotalDistance) + Convert.ToDouble(entryDistance.Distanz)).ToString("0.00");
+                    entryDistance.Distanz = "0";
+                }
+                else
+                {
+                    await DisplayAlert("So nicht!", "Bitte nur Zahlen eintragen", "OK");
+                    entryDistance.Distanz = "0";
+                }
+
+            }
+            else
+            {
+                await DisplayAlert("Mach Sport!", "Du bist ja noch gar nicht gelaufen.", "OK");
+
+            }
         }
 
 
 
 
-        private async void Button_Clicked(object sender, EventArgs e)
+            private async void GPSTracking_Button(object sender, EventArgs e)
         {
             ((Button)sender).IsVisible = false;
             label.IsVisible = true;
@@ -56,7 +126,7 @@ namespace AthenathonApp.Views
 
 
             isGettingLocation = true;
-
+             
 
             Location currentPosition;
             start = await Geolocation.GetLocationAsync(new
@@ -85,12 +155,10 @@ namespace AthenathonApp.Views
             }
         }
 
-        private async void Button_Clicked_1(object sender, EventArgs e)
+        private async void Send_Data_Tracking_Button(object sender, EventArgs e)
         {
 
-
-
-            DisplayAlert("Aktivität getrackt!", "Deine Distanz wurde erfolgreich getrackt :)", "OK");
+            await SubmitRunningData();
             ((Button)sender).IsVisible = false;
 
 
@@ -118,9 +186,16 @@ namespace AthenathonApp.Views
 
 
         }
-        private void Button_Clicked_2(object sender, EventArgs e)
+        async private void Send_Data_Manual(object sender, EventArgs e)
         {
-            DisplayAlert("Super", "Deine Daten wurden erfolgreich übermittelt :)", "OK");
+            if (entryDistance.DistanzArt == null)
+            {
+                await DisplayAlert("Fehler!", "Wähle ein Sportart aus", "OK");
+            } else
+            {
+            await SubmitRunningData();
+            
+            }
 
         }
     }

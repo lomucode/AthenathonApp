@@ -31,18 +31,8 @@
 
                             </Grid.RowDefinitions>
                             <BoxView Grid.Column="0" Grid.Row="0"  BackgroundColor="#f8933b" WidthRequest="3"  HorizontalOptions="Start" VerticalOptions="End"/>
-
-
-
-
-
-
-
                             <StackLayout>
                                 <Label Text="Die Universitäten" FontSize="23" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" Margin="20,50,20,0"></Label>
-
-
-
 
                             </StackLayout>
 
@@ -173,7 +163,7 @@ Innerhalb eines Monats, vom 9. April bis zum 9. Mai, laden wir die Studenten und
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
-                    <Image Source="info.JPG"  HeightRequest="170"
+                    <Image Source="info.jpg"  HeightRequest="170"
            WidthRequest="170"
                                        Grid.Row="1"  Margin="0,10,0,0"></Image>
                     <Button Grid.Column="1" Grid.Row="1" Text="Impressum" FontSize="12" BackgroundColor="#F4F8FB" TextColor="Black" Margin="0,10,0,0"></Button>
@@ -201,6 +191,3 @@ Innerhalb eines Monats, vom 9. April bis zum 9. Mai, laden wir die Studenten und
 
 
 </ContentPage>
-
-  
-

@@ -32,7 +32,7 @@
                     <Image Source="Swimming.jpeg" Aspect="AspectFill"/>
                 </Frame>
             </StackLayout>
-        <Label Text="John Doe"  FontSize="20" Style="{StaticResource textStyle}"/>
+        <Label Text="Nadja Milschin"  FontSize="20" Style="{StaticResource textStyle}"/>
         <Label Text="Student"  FontSize="18" Style="{StaticResource textStyle}"/>
         <Label Text="Universität Siegen"  FontSize="18" Style="{StaticResource textStyle}"/>
         <!--UniCoins-->

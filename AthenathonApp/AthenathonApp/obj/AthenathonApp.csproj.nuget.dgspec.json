@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Refit": {
+              "target": "Package",
+              "version": "[6.0.38, )"
+            },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
               "version": "[1.2.0, )"

@@ -10,7 +10,8 @@ namespace AthenathonApp.Views
     {
         public event PropertyChangingEventHandler PropertyChanged;
         private ObservableCollection<Profile> Profile;
-        public ObservableCollection<Profile> profile {
+
+        public ObservableCollection<Profile> Prof {
             get { return Profile; }
             set { Profile = value;
 
@@ -21,7 +22,7 @@ namespace AthenathonApp.Views
         
         public Profil()
         {
-            profile = new ObservableCollection<Profile>();
+            Prof = new ObservableCollection<Profile>();
             InitializeComponent();
         }
 

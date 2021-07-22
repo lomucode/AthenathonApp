@@ -58,6 +58,14 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/SkiaSharp.Views.iOS.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/SkiaSharp.Views.Forms.dll
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Xamarin.CommunityToolkit.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Refit.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/System.Buffers.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.Json.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/System.Text.Encodings.Web.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/System.Text.Json.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.GeneratedMSBuildEditorConfig.editorconfig
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/actool/_PartialAppManifest.items
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/actool/_BundleResourceWithLogicalName.items
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/ibtool/_BundleResourceWithLogicalName.items
@@ -70,6 +78,7 @@
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/outline_bolt_black_24dp.png
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/outline_bar_chart_black_24dp.png
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/residence.png
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/germany_flag.png
 /Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro-14.5/optimized/
 /Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/AthenathonApp.iOS.exe
 /Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/AthenathonApp.iOS.pdb

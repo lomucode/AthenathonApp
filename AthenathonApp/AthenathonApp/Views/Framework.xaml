@@ -3,10 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AthenathonApp.Views"
     x:Class="AthenathonApp.Views.Framework">
+    
+    <local:Home BindingContext="{Binding _id}"/>
 
-    <local:Home></local:Home>
-
-<local:Activity></local:Activity>
+    <local:Activity></local:Activity>
 
     <local:Profil></local:Profil>
 
