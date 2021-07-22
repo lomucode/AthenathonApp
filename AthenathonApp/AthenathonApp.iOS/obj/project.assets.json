@@ -357,6 +357,21 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.5.0.396"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        }
+      },
       "AthenathonApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -366,7 +381,8 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -714,6 +730,21 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.5.0.396"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        }
+      },
       "AthenathonApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -723,7 +754,8 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -1074,6 +1106,21 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.5.0.396"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        }
+      },
       "AthenathonApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1083,7 +1130,8 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -1434,6 +1482,21 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.5.0.396"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll": {}
+        }
+      },
       "AthenathonApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1443,7 +1506,8 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -2248,6 +2312,22 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
+      "sha512": "W0BHVbWEHi5JV9xoTcxboDCDPvdG3X3oCepauYyZA8kKfSs6EosV7RSpIUzUV2iDUwBMZBRll3/3QXV0eGVRZw==",
+      "type": "package",
+      "path": "xamarin.forms.backgroundvideoview/0.0.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid90/Forms.BackgroundVideo.AndroidCore.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.BackgroundVideoView.dll",
+        "lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.BackgroundVideoView.dll",
+        "xamarin.forms.backgroundvideoview.0.0.0.22.nupkg.sha512",
+        "xamarin.forms.backgroundvideoview.nuspec"
+      ]
+    },
     "AthenathonApp/1.0.0": {
       "type": "project",
       "path": "../AthenathonApp/AthenathonApp.csproj",
@@ -2262,24 +2342,25 @@
       "Refit >= 6.0.38",
       "Xamarin.CommunityToolkit >= 1.2.0",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.BackgroundVideoView >= 0.0.0.22"
     ]
   },
   "packageFolders": {
-    "/Users/louismueller/.nuget/packages/": {}
+    "/Users/anni/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+      "projectUniqueName": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
       "projectName": "AthenathonApp.iOS",
-      "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
-      "packagesPath": "/Users/louismueller/.nuget/packages/",
-      "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
+      "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+      "packagesPath": "/Users/anni/.nuget/packages/",
+      "outputPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/louismueller/.config/NuGet/NuGet.Config"
+        "/Users/anni/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2290,8 +2371,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
-              "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
+            "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+              "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
             }
           }
         }
@@ -2323,6 +2404,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.BackgroundVideoView": {
+            "target": "Package",
+            "version": "[0.0.0.22, )"
           }
         }
       }

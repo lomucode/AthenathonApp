@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj": {}
+    "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj": {}
   },
   "projects": {
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj": {
+    "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
+        "projectUniqueName": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
         "projectName": "AthenathonApp.Android",
-        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
-        "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/",
+        "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.Android/AthenathonApp.Android.csproj",
+        "packagesPath": "/Users/anni/.nuget/packages/",
+        "outputPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/louismueller/.config/NuGet/NuGet.Config"
+          "/Users/anni/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid11.0"
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
-                "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
+              "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+                "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
               }
             }
           }
@@ -71,22 +71,26 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Forms.BackgroundVideoView": {
+              "target": "Package",
+              "version": "[0.0.0.22, )"
             }
           }
         }
       }
     },
-    "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+    "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "projectUniqueName": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
         "projectName": "AthenathonApp",
-        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
-        "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
+        "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj",
+        "packagesPath": "/Users/anni/.nuget/packages/",
+        "outputPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/louismueller/.config/NuGet/NuGet.Config"
+          "/Users/anni/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -139,6 +143,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Forms.BackgroundVideoView": {
+              "target": "Package",
+              "version": "[0.0.0.22, )"
             }
           },
           "imports": [
@@ -151,7 +159,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
