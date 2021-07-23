@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/louismueller/Code/AthAppDB/AthAppDB/AthAppDB.csproj": {}
+    "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/AthAppDB.csproj": {}
   },
   "projects": {
-    "/Users/louismueller/Code/AthAppDB/AthAppDB/AthAppDB.csproj": {
+    "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/AthAppDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louismueller/Code/AthAppDB/AthAppDB/AthAppDB.csproj",
+        "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/AthAppDB.csproj",
         "projectName": "AthAppDB",
-        "projectPath": "/Users/louismueller/Code/AthAppDB/AthAppDB/AthAppDB.csproj",
+        "projectPath": "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/AthAppDB.csproj",
         "packagesPath": "/Users/louismueller/.nuget/packages/",
-        "outputPath": "/Users/louismueller/Code/AthAppDB/AthAppDB/obj/",
+        "outputPath": "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/louismueller/.config/NuGet/NuGet.Config"

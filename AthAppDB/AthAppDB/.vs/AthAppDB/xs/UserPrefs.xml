@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{47EEE725-92B8-4A2F-BF8E-BCC598C51BE4}|Default">
+  <MonoDevelop.Ide.ItemProperties.AthAppDB PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/LoginController.cs">
+    <Files>
+      <File FileName="moduls/ATHENATONContext.cs" Line="152" Column="64" />
+      <File FileName="Controllers/LoginController.cs" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AthAppDB" expanded="True">
+            <Node name="AthAppDB" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="LoginController.cs" selected="True" />
+              </Node>
+              <Node name="moduls" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

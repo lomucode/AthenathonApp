@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Profil.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Home.xaml.cs">
     <Files>
-      <File FileName="AthenathonApp/Views/Profil.xaml" Line="40" Column="113" />
-      <File FileName="AthenathonApp/Views/Profil.xaml.cs" Line="28" Column="33" />
+      <File FileName="AthenathonApp/Views/Home.xaml" Line="115" Column="31" />
+      <File FileName="AthenathonApp/Views/Home.xaml.cs" Line="80" Column="18" />
+      <File FileName="AthenathonApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="AthenathonApp/Views/ChangePassword.xaml" Line="1" Column="1" />
+      <File FileName="AthenathonApp/Views/Activity.xaml.cs" Line="82" Column="83" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AthenathonApp" expanded="True">
             <Node name="AthenathonApp" expanded="True">
-              <Node name="Services" expanded="True" />
+              <Node name="API" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Activity.xaml" expanded="True" />
-                <Node name="Home.xaml" expanded="True" />
-                <Node name="Login.xaml" expanded="True" />
-                <Node name="Profil.xaml" expanded="True">
-                  <Node name="Profil.xaml.cs" selected="True" />
+                <Node name="ChangePassword.xaml" expanded="True" />
+                <Node name="Framework.xaml" expanded="True" />
+                <Node name="Home.xaml" expanded="True">
+                  <Node name="Home.xaml.cs" selected="True" />
                 </Node>
+                <Node name="Login.xaml" expanded="True" />
+                <Node name="Profil.xaml" expanded="True" />
                 <Node name="Register.xaml" expanded="True" />
                 <Node name="StartingPage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="AthenathonApp.iOS" expanded="True" />
           </Node>

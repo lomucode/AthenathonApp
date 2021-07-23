@@ -10,6 +10,7 @@ namespace AthenathonApp.Views
     {
         public string _id;
 
+        //reference to all other pages
         public Framework(string id)
         {
             InitializeComponent();

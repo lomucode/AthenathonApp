@@ -28,10 +28,21 @@ namespace AthenathonApp.Views
 
         }
 
+        //go to login page
         public async void ButtonRegister(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new Register());
             NavigationPage.SetHasBackButton(this, false);
+        }
+
+        //signing in and go to the homescreen  
+        public async void PushHome(object sender, System.EventArgs e)
+        {
+            string id = await LoginUser();
+            if (id != "")
+            {
+                await Navigation.PushModalAsync(new Framework(id));
+            }
         }
 
         public async Task<string> LoginUser()
@@ -41,33 +52,36 @@ namespace AthenathonApp.Views
                 Email = u.Email,
                 PasswordHash = u.PasswordHash,
             };
+            //frontend error check
             if (user.Email != null && user.PasswordHash != null) {
-            var httpClient = new HttpClient();
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+                //request the rest-api
+                var httpClient = new HttpClient();
+                var json = JsonConvert.SerializeObject(user);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync("http://192.168.2.167:5000/api/Login", content);
-            string result = await response.Content.ReadAsStringAsync();
-                if (result != "\"Falsche Zugangsdaten\"" || result == "\"User not Existing in Database\"")
-                {
-                    try
+                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.178.27:5000/api/Login", content);
+                string result = await response.Content.ReadAsStringAsync();
+                //check for errors
+                    if (result != "\"Falsche Zugangsdaten\"" || result == "\"User not Existing in Database\"")
                     {
-
-                    var jsonString = await response.Content.ReadAsStringAsync();
-                    var res = JsonConvert.DeserializeObject<User>(jsonString);
-                    string id = res.Id;
-                        if(id == "")
+                        try
                         {
-                            await DisplayAlert("Noch nicht registriert", "Unter den angegebenen Daten ist kein Nutzer registriert", "OK");
+                        //if no errors included, logging in and safe the user data in a global reference
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var res = JsonConvert.DeserializeObject<User>(jsonString);
+                        string id = res.Id;
+                            if(id == "")
+                            {
+                                await DisplayAlert("Noch nicht registriert", "Unter den angegebenen Daten ist kein Nutzer registriert", "OK");
+                            }
+                            App.globalToken.Token = id;
+                            App.globalToken.Email = u.Email;
+                            return id;
                         }
-                        App.globalToken.Token = id;
-                        App.globalToken.Email = u.Email;
-                        return id;
-                    }
-                    catch
-                    {
-                        return "";
-                    }
+                        catch
+                        {
+                            return "";
+                        }
                 }
                 else
                 {
@@ -81,14 +95,6 @@ namespace AthenathonApp.Views
             }
         }
 
-        public async void PushHome(object sender, System.EventArgs e)
-        {
-            string id = await LoginUser();
-            if (id != "")
-            {
-            await Navigation.PushModalAsync(new Framework(id));
-            } 
-        }
         
     }
 }

@@ -13,6 +13,8 @@ namespace AthenathonApp.Views
         public Profil()
         {
             InitializeComponent();
+
+            //usinging the global data from the user to represent it in the profile frontend 
             var cur = new Profile();
             cur.Name = App.globalToken.Email.Substring(0, App.globalToken.Email.IndexOf("."));
             cur.Role = "Student";
@@ -21,10 +23,13 @@ namespace AthenathonApp.Views
             BindingContext = cur;
         }
 
+        //push to the changePassword page
         public async void ChangePassword(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new ChangePassword());
         }
+
+        //function to logging out
         public async void LogOut(object sender, System.EventArgs e)
         {
             App.globalToken.Email = "";

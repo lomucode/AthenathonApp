@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 
+
+//class for the post calls to server
 namespace AthenathonApp.Services
 {
     public class PostDistanceEntry : INotifyPropertyChanged

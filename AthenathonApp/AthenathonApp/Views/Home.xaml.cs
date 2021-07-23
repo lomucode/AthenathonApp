@@ -14,32 +14,32 @@ namespace AthenathonApp.Views
     public partial class Home : ContentPage
     {
         //GET FUNCTION DATA NEWS
-        private readonly string newsUrl = "http://192.168.2.167:5000/api/News";
+        private readonly string newsUrl = "http://192.168.178.27:5000/api/News";
         private readonly HttpClient httpClientNews = new HttpClient();
         public ObservableCollection<News> TheNews { get; set; } = new ObservableCollection<News>();
 
         //GET FUNCTION DISTANZDATEN TRACKING
-        private readonly string distanceUrl = "http://192.168.2.167:5000/api/DistanDatens";
+        private readonly string distanceUrl = "http://192.168.178.27:5000/api/DistanDatens";
         private readonly HttpClient httpClientDistanceData = new HttpClient();
         public ObservableCollection<DistanceEntry> DistanceEntries { get; set; } = new ObservableCollection<DistanceEntry>();
 
+        //lists, to safe the activity data
         List<string[]> act = new List<string[]>();
         List<string[]> activitiesToday = new List<string[]>();
-        
 
         public Home()
         {
             InitializeComponent();
             NewsCarouselView.ItemsSource = TheNews;
             BindingContext = this;
-
         }
 
+        //function, which starts by calling the page
         protected async override void OnAppearing()
         {
             base.OnAppearing();
 
-            //Setup News
+            //getting News from server
             var newsObj = await httpClientNews.GetStringAsync(newsUrl);
             var newsResult = JsonConvert.DeserializeObject<News[]>(newsObj);
 
@@ -50,14 +50,13 @@ namespace AthenathonApp.Views
                 TheNews.Add(n);
             }
 
-            //Setup Distance Data
+            //getting Distance Data from server
             var distanceObj = await httpClientDistanceData.GetStringAsync(distanceUrl);
             var distanceResult = JsonConvert.DeserializeObject<DistanceEntry[]>(distanceObj);
-            DateTime thisDay = DateTime.Today;
-            string[] sportArts = { "Laufen", "Spazieren", "Schwimmen", "Fahrrad fahren", "Hiking", "Indoor-Biking", "Sonstiges" };
+            string[] sportArts = { "Laufen", "Spazieren", "Schwimmen", "Fahrrad fahren", "Hiking", "Indoor_Biking", "Sonstiges" };
 
 
-            //Activities
+            //Activities create all neccessary variables
             var ent = new List<ChartEntry>();
             var entTotalActivity = new List<ChartEntry>();
             var entById = new List<ChartEntry>();
@@ -65,19 +64,22 @@ namespace AthenathonApp.Views
             var myActivitiesToday = new List<string[]>();
             double[] lastSevenDays = { 0, 0, 0, 0, 0, 0, 0 };
             double[] lastSevenDaysById = { 0, 0, 0, 0, 0, 0, 0 };
-            double[] entireActivities = { 0, 0, 0, 0, 0, 0};
+            double[] entireActivities = { 0, 0, 0, 0, 0, 0, 0};
 
             DistanceEntries.Clear();
 
+            //going to each distance entry from the database and assign it to the corresponding variables
             foreach (var d in distanceResult)
             {
                 DistanceEntries.Add(d);
 
                 //last seven days activity in km 
                 int dif = 6 - (DateTime.Today - d.DistanDatenDatum).Days;
+
                 if (dif >= 0)
                 {
-                    lastSevenDays[dif] += d.Distanz; 
+                    lastSevenDays[dif] += d.Distanz;
+                    //await DisplayAlert("ok", dif.ToString(), "ok");
                 }
                 //last seven days activity in km by userId
                 if(dif >= 0 && App.globalToken.Token == d.UserId)
@@ -96,10 +98,11 @@ namespace AthenathonApp.Views
                 }
 
                 //Sports distribution
-                int index = Array.IndexOf(sportArts, d.DistanzArt);
+                int index = Array.IndexOf(sportArts, d.DistanzArt) ;
                 entireActivities[index] += d.Distanz;
             }
-            //if no data available
+
+            //if no data available, showing up the according messages
             if (myActivities.Count == 0)
             {
                 string[] temp = new string[] { "Noch nichts beigetragen :(", "0" };
@@ -111,13 +114,14 @@ namespace AthenathonApp.Views
                 myActivitiesToday.Add(temp);
             }
 
+            //giving the frontend access to the data
             act = myActivities;
             activitiesToday = myActivitiesToday;
 
             MainCarouselView.ItemsSource = act;
             LastActivityView.ItemsSource = activitiesToday;
 
-            //FOR LAST SEVEN DAYS BY USER-ID
+            //for last 7 days by user-id
             for (var j = 0; j < lastSevenDaysById.Length; j++)
             {
 
@@ -174,9 +178,6 @@ namespace AthenathonApp.Views
 
             var chart = new DonutChart() { Entries = ent, LabelTextSize = 30, };
             this.AllActivities.Chart = chart;
-
-
-
         }
     }
 }

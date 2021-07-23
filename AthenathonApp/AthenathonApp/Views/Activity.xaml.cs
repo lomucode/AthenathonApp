@@ -15,7 +15,7 @@ namespace AthenathonApp.Views
     public partial class Activity : ContentPage
     {
         //GET FUNCTION DISTANZDATEN TRACKING
-        private readonly string distanceUrl = "http://192.168.2.167:5000/api/DistanDatens";
+        private readonly string distanceUrl = "http://192.168.178.27:5000/api/DistanDatens";
         private readonly HttpClient httpClientDistanceData = new HttpClient();
         public ObservableCollection<DistanceEntry> DistanceEntries { get; set; } = new ObservableCollection<DistanceEntry>();
 
@@ -39,23 +39,26 @@ namespace AthenathonApp.Views
             stopwatch = new Stopwatch();
 
         }
-
+        //function starts by calling the page
         protected async override void OnAppearing()
         {
+            //calling the rest api
             base.OnAppearing();
             var distanceObj = await httpClientDistanceData.GetStringAsync(distanceUrl);
             var distanceResult = JsonConvert.DeserializeObject<DistanceEntry[]>(distanceObj);
             double temp = 0;
 
+            //calculate the total distance
             foreach (var d in distanceResult)
             {
                 temp += d.Distanz;
             }
             entryDistance.TotalDistance = temp.ToString("0.00");
         }
-
+        //submit the data, both manual and gps tracking
         public async Task SubmitRunningData()
         {
+            //checking, wheather manual is used or gps tracking ||  if distance > 0, gps tracking is used
             if(distance > 0)
             {
                 entryDistance.Distanz = distance.ToString();
@@ -68,14 +71,16 @@ namespace AthenathonApp.Views
                 UserId = App.globalToken.Token,
                 DistanDatenDatum = DateTime.Today,
             };
+            //checking, if every important data are setted 
             if (e.Distanz != null && e.DistanzArt != null)
             {
-                
+                //calling the api with a post call
                 var httpClient = new HttpClient();
                 var json = JsonConvert.SerializeObject(e);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.2.167:5000/api/DistanDatens", content);
+                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.178.27:5000/api/DistanDatens", content);
+                //errorhandling
                 if (response.IsSuccessStatusCode)
                 {
                 await DisplayAlert("Super", "Deine Daten wurden erfolgreich übermittelt :)", "OK");
@@ -98,7 +103,7 @@ namespace AthenathonApp.Views
 
 
 
-
+        //if gps tracking is started, then manual tracking is hidden
             private async void GPSTracking_Button(object sender, EventArgs e)
         {
             ((Button)sender).IsVisible = false;
@@ -114,21 +119,18 @@ namespace AthenathonApp.Views
             label8.IsVisible = false;
 
             stopwatch.Start();
+
             Device.StartTimer(TimeSpan.FromSeconds(0.0015), () =>
-            {
-                label1.Text = stopwatch.Elapsed.ToString();
+                {
+                    label1.Text = stopwatch.Elapsed.ToString();
 
-                return true;
+                    return true;
 
-            }
-
+                }
             );
 
-
-
+            //function, to calculate the distance between two points || walking in a circle works, too
             isGettingLocation = true;
-             
-
             Location currentPosition;
             start = await Geolocation.GetLocationAsync(new
                       GeolocationRequest(GeolocationAccuracy.Default, TimeSpan.FromMinutes(1)));
@@ -139,15 +141,9 @@ namespace AthenathonApp.Views
             {
                 currentPosition = await Geolocation.GetLocationAsync(new
                        GeolocationRequest(GeolocationAccuracy.Default, TimeSpan.FromMinutes(1)));
-
                 km = Location.CalculateDistance(start, currentPosition, DistanceUnits.Kilometers);
-
                 distance += km;
-
                 start = currentPosition;
-
-
-
                 await Task.Delay(500);
 
                 label3.Text = $"{Math.Round(distance, 2)}";
@@ -155,14 +151,14 @@ namespace AthenathonApp.Views
 
             }
         }
-
+        // function is called, if gps tracking is terminated 
         private async void Send_Data_Tracking_Button(object sender, EventArgs e)
         {
 
             await SubmitRunningData();
             ((Button)sender).IsVisible = false;
 
-
+            //showing manual tracking and reset the tracked data
             label.IsVisible = true;
             label1.IsVisible = false;
             label2.IsVisible = false;
@@ -172,23 +168,17 @@ namespace AthenathonApp.Views
             label6.IsVisible = true;
             label7.IsVisible = true;
             label8.IsVisible = true;
-
-            // Simulates running process!
-
-
-
             label.IsVisible = false;
             button1.IsVisible = true;
-
             isGettingLocation = false;
             distance = 0;
-
             stopwatch.Reset();
 
 
         }
         async private void Send_Data_Manual(object sender, EventArgs e)
         {
+            //error handling
             if (entryDistance.DistanzArt == null)
             {
                 await DisplayAlert("Fehler!", "Wähle ein Sportart aus", "OK");

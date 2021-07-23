@@ -36,7 +36,7 @@
                                         <x:String>Schwimmen</x:String>
                                         <x:String>Fahrrad fahren</x:String>
                                         <x:String>Hiking</x:String>
-                                        <x:String>Indoor-Biking</x:String>
+                                        <x:String>Indoor_Biking</x:String>
                                         <x:String>Sonstiges</x:String>
                                     </x:Array>
                                 </Picker.ItemsSource>

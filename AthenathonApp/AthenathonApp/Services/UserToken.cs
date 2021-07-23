@@ -2,6 +2,7 @@
 using System.ComponentModel;
 
 namespace AthenathonApp.Services
+    //class, to setup global user data
 {
     public class UserToken : INotifyPropertyChanged
     {

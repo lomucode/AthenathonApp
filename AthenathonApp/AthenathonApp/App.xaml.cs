@@ -12,8 +12,9 @@ namespace AthenathonApp
 
         public App()
         {
+            //global reference to the logged in user
             UserToken token = new UserToken();
-            token.Token = "cute";
+            token.Token = "";
             globalToken = token;
             InitializeComponent();
             MainPage = new NavigationPage(new StartingPage());
