@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{AA5428E4-EBF8-46CA-AA3A-8A00BB79BD08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Profil.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthenathonApp/Views/Profil.xaml.cs">
     <Files>
-      <File FileName="AthenathonApp/Views/Home.xaml" Line="24" Column="75" />
-      <File FileName="AthenathonApp/Views/Home.xaml.cs" />
-      <File FileName="AthenathonApp.iOS/Main.cs" />
-      <File FileName="AthenathonApp/Views/Info.xaml" Line="166" Column="44" />
-      <File FileName="AthenathonApp/Views/Profil.xaml" Line="36" Column="25" />
+      <File FileName="AthenathonApp/Views/Profil.xaml" Line="40" Column="113" />
+      <File FileName="AthenathonApp/Views/Profil.xaml.cs" Line="28" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,18 +12,16 @@
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Activity.xaml" expanded="True" />
-                <Node name="Info.xaml" expanded="True" />
-                <Node name="Profil.xaml" selected="True" />
+                <Node name="Home.xaml" expanded="True" />
+                <Node name="Login.xaml" expanded="True" />
+                <Node name="Profil.xaml" expanded="True">
+                  <Node name="Profil.xaml.cs" selected="True" />
+                </Node>
+                <Node name="Register.xaml" expanded="True" />
+                <Node name="StartingPage.xaml" expanded="True" />
               </Node>
             </Node>
-            <Node name="AthenathonApp.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="AthenathonApp.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
-            </Node>
+            <Node name="AthenathonApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>

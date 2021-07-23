@@ -10,7 +10,7 @@
                 
                     <Frame BackgroundColor="#D387E2" HeightRequest="150" HasShadow="False">
                         
-                        <Label Text="Hey, Nadja!" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="center" Margin="0,30,0,0"/>
+                        <Label Text="{Binding Name, StringFormat='Hey, {0}'}" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="center" Margin="0,30,0,0"/>
                     </Frame>
 
                     <Frame BackgroundColor="White" Padding="36" CornerRadius="36" Margin="60,-60,60,0" HasShadow="False">

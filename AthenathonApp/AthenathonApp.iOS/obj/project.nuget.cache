@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YTvch+lEg0cxW1DrV177uBa1XAE1OcBWuUJ12PXCpiadGdKzz5pN6M7I6LnOyUyLGwCwFnuv2QgMRFIwpROInA==",
+  "dgSpecHash": "vc6wcttRWTh+KJFcER4gcvJdhccvupuxPOnAIpo3KsgE8KJkLf+ripnrR+pUH/m7W9A7gkJZAI1f6r+4j9PnRg==",
   "success": true,
   "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,8 @@
     "/Users/louismueller/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.communitytoolkit/1.2.0/xamarin.communitytoolkit.1.2.0.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
-    "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "/Users/louismueller/.nuget/packages/xamarin.forms.backgroundvideoview/0.0.0.22/xamarin.forms.backgroundvideoview.0.0.0.22.nupkg.sha512"
   ],
   "logs": []
 }

@@ -8,31 +8,28 @@ namespace AthenathonApp.Views
 {
     public partial class Profil : ContentPage
     {
-        public event PropertyChangingEventHandler PropertyChanged;
-        private ObservableCollection<Profile> Profile;
+        Profile currentUser = new Profile();
 
-        public ObservableCollection<Profile> Prof {
-            get { return Profile; }
-            set { Profile = value;
-
-                PropertyChanged?.Invoke(this, new PropertyChangingEventArgs("profile"));
-            }
-                }
-
-        
         public Profil()
         {
-            Prof = new ObservableCollection<Profile>();
             InitializeComponent();
+            var cur = new Profile();
+            cur.Name = App.globalToken.Email.Substring(0, App.globalToken.Email.IndexOf("."));
+            cur.Role = "Student";
+            cur.University = "Universität Siegen";
+            currentUser = cur;
+            BindingContext = cur;
         }
 
         public async void ChangePassword(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new ChangePassword());
         }
-
-
-
-
-    }
+        public async void LogOut(object sender, System.EventArgs e)
+        {
+            App.globalToken.Email = "";
+            App.globalToken.Token = "";
+            await Navigation.PushModalAsync(new StartingPage());
+        }
+}
 }

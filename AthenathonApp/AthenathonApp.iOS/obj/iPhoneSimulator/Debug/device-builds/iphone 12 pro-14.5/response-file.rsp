@@ -221,4 +221,6 @@
 --reference=/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 --reference=/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 --reference=/Users/louismueller/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+--reference=/Users/louismueller/.nuget/packages/xamarin.forms.backgroundvideoview/0.0.0.22/lib/Xamarin.iOS10/Forms.BackgroundVideoView.iOSCore.dll
+--reference=/Users/louismueller/.nuget/packages/xamarin.forms.backgroundvideoview/0.0.0.22/lib/Xamarin.iOS10/Xamarin.Forms.BackgroundVideoView.dll
 --reference=/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/bin/Debug/netstandard2.0/AthenathonApp.dll

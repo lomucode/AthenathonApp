@@ -381,8 +381,7 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -754,8 +753,7 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -1130,8 +1128,7 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -1506,8 +1503,7 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/AthenathonApp.dll": {}
@@ -2347,20 +2343,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/anni/.nuget/packages/": {}
+    "/Users/louismueller/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+      "projectUniqueName": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
       "projectName": "AthenathonApp.iOS",
-      "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
-      "packagesPath": "/Users/anni/.nuget/packages/",
-      "outputPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
+      "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/AthenathonApp.iOS.csproj",
+      "packagesPath": "/Users/louismueller/.nuget/packages/",
+      "outputPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/anni/.config/NuGet/NuGet.Config"
+        "/Users/louismueller/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2371,8 +2367,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
-              "projectPath": "/Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
+            "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj": {
+              "projectPath": "/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp/AthenathonApp.csproj"
             }
           }
         }

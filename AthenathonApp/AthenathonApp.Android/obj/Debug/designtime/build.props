@@ -12,9 +12,9 @@ embedassembliesintoapk=false
 androidlinkmode=none
 androidlinkskip=
 androidsdkbuildtoolsversion=30.0.2
-androidsdkpath=/users/anni/library/developer/xamarin/android-sdk-macosx/
+androidsdkpath=/users/louismueller/library/android/sdk/
 androidndkpath=
-javasdkpath=/users/anni/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
+javasdkpath=/users/louismueller/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
 androidsequencepointsmode=none
 xamarinandroidversion=11.3.0-4
 monosymbolarchive=false
@@ -25,11 +25,7 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-<<<<<<< HEAD
-_nugetassetstimestamp=637624932790796140
-=======
-_nugetassetstimestamp=637617060761127793
->>>>>>> main
+_nugetassetstimestamp=637625927414445208
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a

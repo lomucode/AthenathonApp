@@ -49,11 +49,11 @@
                         <StackLayout>
                             <Frame BackgroundColor="Orange" CornerRadius="15" Margin="20, 10,20,10" Padding="0">
                                 <StackLayout Margin="0" Padding="0">
-                                    <StackLayout HorizontalOptions="Center" Margin="0, 5,0,0" >
+                                    <StackLayout HorizontalOptions="Center" Margin="10, 5,0,0" >
                                         <Label TextColor="#fff" Text="{Binding [1]}" FontSize="35" FontAttributes="Bold" HorizontalOptions="Center"/>
                                         <Label TextColor="#fff" Text="Distanz(km)" FontSize="14" HorizontalOptions="Center"/>
                                     </StackLayout>
-                                    <StackLayout HorizontalOptions="Start" Margin="10, 5,0,10">
+                                    <StackLayout HorizontalOptions="Start" Margin="0, 5,0,10">
                                         <Label FontAttributes="Bold"  TextColor="#fff" Text="{Binding [0]}" FontSize="14" HorizontalOptions="Start"/>
                                     </StackLayout>
                                 </StackLayout>
@@ -80,11 +80,11 @@
                         <StackLayout>
                             <Frame BackgroundColor="LightGreen" CornerRadius="15" Margin="20, 10,20,10" Padding="0" HeightRequest="80">
                     
-                                    <StackLayout Margin="20" VerticalOptions="End" Orientation="Horizontal" HorizontalOptions="Center">
+                                    <StackLayout Margin="10" VerticalOptions="End" Orientation="Horizontal" HorizontalOptions="Center">
                                         <Label VerticalOptions="End" TextColor="#fff" Text="{Binding [0]}" FontSize="20" FontAttributes="Bold" />
-                                        <Label VerticalOptions="End" TextColor="#fff" Text="+" Margin="20,0,0,0" FontSize="40" FontAttributes="Bold" />
+                                        <Label VerticalOptions="End" TextColor="#fff" Text="+" Margin="10,0,0,0" FontSize="40" FontAttributes="Bold" />
                                         <Label VerticalOptions="End" TextColor="#fff" Text= "{Binding [1]}" FontSize="40" />
-                                        <Label VerticalOptions="End" TextColor="#fff" Text="km" FontSize="20" FontAttributes="Bold" />
+                                        <Label VerticalOptions="End" TextColor="#fff" Text="km" FontSize="14" FontAttributes="Bold" />
                                     </StackLayout>
                                
                             </Frame>

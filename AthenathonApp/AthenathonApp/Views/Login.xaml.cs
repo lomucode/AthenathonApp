@@ -16,8 +16,6 @@ namespace AthenathonApp.Views
 {
     public partial class Login : ContentPage
     {
-        private readonly IMyAPI todoServer = RestService.For<IMyAPI>("https://192.168.2.167");
-        IMyAPI myAPI;
         PostUser u = new PostUser();
 
         public Login()
@@ -43,14 +41,13 @@ namespace AthenathonApp.Views
                 Email = u.Email,
                 PasswordHash = u.PasswordHash,
             };
-            if(user.Email != null && user.PasswordHash != null) {
+            if (user.Email != null && user.PasswordHash != null) {
             var httpClient = new HttpClient();
             var json = JsonConvert.SerializeObject(user);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             HttpResponseMessage response = await httpClient.PostAsync("http://192.168.2.167:5000/api/Login", content);
             string result = await response.Content.ReadAsStringAsync();
-
                 if (result != "\"Falsche Zugangsdaten\"" || result == "\"User not Existing in Database\"")
                 {
                     try
@@ -59,7 +56,13 @@ namespace AthenathonApp.Views
                     var jsonString = await response.Content.ReadAsStringAsync();
                     var res = JsonConvert.DeserializeObject<User>(jsonString);
                     string id = res.Id;
-                    return id;
+                        if(id == "")
+                        {
+                            await DisplayAlert("Noch nicht registriert", "Unter den angegebenen Daten ist kein Nutzer registriert", "OK");
+                        }
+                        App.globalToken.Token = id;
+                        App.globalToken.Email = u.Email;
+                        return id;
                     }
                     catch
                     {
@@ -84,7 +87,7 @@ namespace AthenathonApp.Views
             if (id != "")
             {
             await Navigation.PushModalAsync(new Framework(id));
-            }
+            } 
         }
         
     }

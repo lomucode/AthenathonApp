@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-          
-           
+               xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="AthenathonApp.StartingPage"
              NavigationPage.HasNavigationBar="False"
             >
@@ -19,7 +17,8 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-   <Grid>
+    
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             
@@ -32,9 +31,6 @@
                       IsLooping="True" Aspect="AspectFill" AutoPlay= "True"
                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
                           />
-   
-
-    
    
 
 
@@ -52,7 +48,7 @@
         <Label Text="Europe Day" FontSize="42" Padding="30,20,30,0" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
         <Label Text="ATHENATHON" FontSize="48" FontAttributes="Bold" Padding="30,0,30,10" TextColor="DarkBlue"/>
         </StackLayout>
-  
+        <!--<Button Text="Click Me" Clicked="Handle_Clicked" />-->
       <StackLayout VerticalOptions="EndAndExpand"  Padding="0 ,200, 0, 0">
             <Button Text="Registrieren" FontSize="20" FontAttributes="Bold" Clicked="ButtonRegister" BackgroundColor="#FE8C8D" Style="{StaticResource buttonStyle}"/>
             <Button Text="Anmelden" FontSize="20" FontAttributes="Bold" Clicked="ButtonLogin" BackgroundColor="Black" Style="{StaticResource buttonStyle}"/>
@@ -64,9 +60,7 @@
         </StackLayout>
     </StackLayout>
 
-         </Grid>
-
        
            
-
+        </Grid>
 </ContentPage>

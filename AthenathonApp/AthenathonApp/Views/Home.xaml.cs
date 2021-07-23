@@ -80,7 +80,7 @@ namespace AthenathonApp.Views
                     lastSevenDays[dif] += d.Distanz; 
                 }
                 //last seven days activity in km by userId
-                if(dif >= 0 && "1b993051-aaee-497a-aae4-693b85c37518" == d.UserId)
+                if(dif >= 0 && App.globalToken.Token == d.UserId)
                 {
                     lastSevenDaysById[dif] += d.Distanz;
 

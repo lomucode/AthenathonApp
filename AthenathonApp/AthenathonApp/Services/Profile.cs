@@ -1,14 +1,64 @@
 ﻿using System;
+using System.ComponentModel;
+
 namespace AthenathonApp.Services
 {
-    public class Profile
+    public class Profile : INotifyPropertyChanged
     {
-        public string Name { get; set; }
+        private string _name;
+        private string _role;
+        private string _university;
 
-        public string Role { get; set; }
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
 
-        public string University { get; set; }
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
+                }
+            }
+        }
 
+        public string Role
+        {
+            get
+            {
+                return _role;
+            }
+            set
+            {
+                _role = value;
 
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Role)));
+                }
+            }
+        }
+
+        public string University
+        {
+            get
+            {
+                return _university;
+            }
+            set
+            {
+                _university = value;
+
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(University)));
+                }
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
