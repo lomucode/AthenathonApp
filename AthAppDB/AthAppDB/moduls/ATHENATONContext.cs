@@ -149,7 +149,7 @@ namespace AthAppDB.moduls
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.UserId).HasMaxLength(100);
+                entity.Property(e => e.UserId).HasMaxLength(450);
             });
 
             modelBuilder.Entity<DistanDaten>(entity =>
@@ -165,7 +165,7 @@ namespace AthAppDB.moduls
 
                 entity.Property(e => e.DistanzManuellAnpassen).HasColumnName("Distanz_manuell_Anpassen");
 
-                entity.Property(e => e.UserId).HasMaxLength(100);
+                entity.Property(e => e.UserId).HasMaxLength(450);
             });
 
             modelBuilder.Entity<News>(entity =>
@@ -189,7 +189,7 @@ namespace AthAppDB.moduls
 
                 entity.Property(e => e.UserId)
                     .IsRequired()
-                    .HasMaxLength(100);
+                    .HasMaxLength(450);
 
                 entity.Property(e => e.Zeit)
                     .HasColumnType("datetime")

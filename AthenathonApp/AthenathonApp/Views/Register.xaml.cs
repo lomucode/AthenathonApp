@@ -22,11 +22,15 @@ namespace AthenathonApp.Views
             BindingContext = theUser;
 
         }
+
+        //reference to the login page
         public async void ButtonLogin(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new Login());
             NavigationPage.SetHasBackButton(this, false);
         }
+
+        //signing up
         public async void PushHome(object sender, System.EventArgs e)
         {
             string id = await RegisterUser();
@@ -36,6 +40,7 @@ namespace AthenathonApp.Views
             }
         }
 
+        //signing up
         public async Task<string> RegisterUser()
         {
             PostUser user = new PostUser
@@ -44,6 +49,7 @@ namespace AthenathonApp.Views
                 PasswordHash = u.PasswordHash,
                 PasswordHashTest = u.PasswordHashTest,
             };
+            //checking for errors in the frontend
             if (user.PasswordHash != user.PasswordHashTest) {
                 await DisplayAlert("Passwörter stimmen nicht überein", "Passwörter überprüfen", "OK");
                 return "";
@@ -54,15 +60,17 @@ namespace AthenathonApp.Views
             }
             else if (user.Email != null && user.PasswordHash != null)
             {
+                //if no errors detected in the frontend, send a api request
                 var httpClient = new HttpClient();
                 var json = JsonConvert.SerializeObject(user);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.2.167:5000/api/Register", content);
+                HttpResponseMessage response = await httpClient.PostAsync("http://192.168.178.27:5000/api/Register", content);
                 string result = await response.Content.ReadAsStringAsync();
 
                 if (result != "\"user is already taken\"")
                 {
+                    //signing up successful
                     var jsonString = await response.Content.ReadAsStringAsync();
                     var res = JsonConvert.DeserializeObject<User>(jsonString);
                     string id = res.Id;

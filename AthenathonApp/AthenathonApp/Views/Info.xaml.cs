@@ -5,16 +5,10 @@ namespace AthenathonApp.Views
 {
     public partial class Info : ContentPage
     {
-
-
+    //only front end page, no backend needed
         public Info()
         {
             InitializeComponent();
-        }
-
-        void OnExpanderTapped(object sender, EventArgs e)
-        {
-            Console.WriteLine("Expander tapped.");
         }
 
     }

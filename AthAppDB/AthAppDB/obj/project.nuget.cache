@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GHc2XJwxaR/Rp+R1ABxEJNIHZVCEZMglp0ZgP40E4wJM/Oy+uv6g6Yvlhny33rmCwaSUNKJAoyNfA9RqZhmDLQ==",
+  "dgSpecHash": "vsNEYDieCQ+6QHLYQDp+DmI8KUNh+Pe2RkVbKbAyLnM1ISpaPIFGwqJ09dQiprxdRb9xU9DIVJf8CKWpMM/vXg==",
   "success": true,
-  "projectFilePath": "/Users/louismueller/Code/AthAppDB/AthAppDB/AthAppDB.csproj",
+  "projectFilePath": "/Users/louismueller/Code/AthenathonApp/AthAppDB/AthAppDB/AthAppDB.csproj",
   "expectedPackageFiles": [
     "/Users/louismueller/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/louismueller/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

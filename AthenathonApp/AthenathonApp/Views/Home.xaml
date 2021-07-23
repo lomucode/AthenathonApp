@@ -113,6 +113,7 @@
                                <StackLayout class="activityItems" HeightRequest="150" BackgroundColor="Orange">
                     <microcharts:ChartView x:Name="AllActivities" HeightRequest="150"/>
                 </StackLayout>
+
             </StackLayout>
         </StackLayout>
             </ScrollView>
