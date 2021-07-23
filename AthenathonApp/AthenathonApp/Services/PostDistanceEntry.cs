@@ -8,6 +8,7 @@ namespace AthenathonApp.Services
         private string _distanz;
         private string _distanzArt;
         private string _userId;
+        private string _name;
         private DateTime _date;
         private string _total;
 
@@ -24,6 +25,23 @@ namespace AthenathonApp.Services
                 if (PropertyChanged != null)
                 {
                     OnPropertyChanged(nameof(Distanz));
+                }
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+
+                if (PropertyChanged != null)
+                {
+                    OnPropertyChanged(nameof(Name));
                 }
             }
         }

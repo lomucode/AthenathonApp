@@ -15,8 +15,7 @@
           "Refit": "6.0.38",
           "Xamarin.CommunityToolkit": "1.2.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.BackgroundVideoView": "0.0.0.22"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "AthenathonApp.dll": {}
@@ -256,18 +255,6 @@
             "fileVersion": "5.0.0.671"
           }
         }
-      },
-      "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
-        "dependencies": {
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.BackgroundVideoView.dll": {
-            "assemblyVersion": "0.0.0.22",
-            "fileVersion": "0.0.0.22"
-          }
-        }
       }
     }
   },
@@ -437,13 +424,6 @@
       "sha512": "sha512-Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
       "path": "xamarin.forms/5.0.0.2012",
       "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
-    },
-    "Xamarin.Forms.BackgroundVideoView/0.0.0.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-W0BHVbWEHi5JV9xoTcxboDCDPvdG3X3oCepauYyZA8kKfSs6EosV7RSpIUzUV2iDUwBMZBRll3/3QXV0eGVRZw==",
-      "path": "xamarin.forms.backgroundvideoview/0.0.0.22",
-      "hashPath": "xamarin.forms.backgroundvideoview.0.0.0.22.nupkg.sha512"
     }
   }
 }

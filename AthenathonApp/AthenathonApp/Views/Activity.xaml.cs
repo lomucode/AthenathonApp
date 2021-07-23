@@ -33,6 +33,7 @@ namespace AthenathonApp.Views
             InitializeComponent();
             var data = new PostDistanceEntry();
             entryDistance = data;
+            data.Name = App.globalToken.Email.Substring(0, App.globalToken.Email.IndexOf("."));
             BindingContext = data;
 
             stopwatch = new Stopwatch();
@@ -64,7 +65,7 @@ namespace AthenathonApp.Views
             {
                 Distanz = entryDistance.Distanz,
                 DistanzArt = entryDistance.DistanzArt,
-                UserId = "1b993051-aaee-497a-aae4-693b85c37518",
+                UserId = App.globalToken.Token,
                 DistanDatenDatum = DateTime.Today,
             };
             if (e.Distanz != null && e.DistanzArt != null)

@@ -32,11 +32,12 @@
                     <Image Source="Swimming.jpeg" Aspect="AspectFill"/>
                 </Frame>
             </StackLayout>
-        <Label Text="Nadja Milschin"  FontSize="20" Style="{StaticResource textStyle}"/>
-        <Label Text="Student"  FontSize="18" Style="{StaticResource textStyle}"/>
-        <Label Text="Universität Siegen"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <Label Text="{Binding Name}"  FontSize="20" Style="{StaticResource textStyle}"/>
+        <Label Text="{Binding Role}"  FontSize="18" Style="{StaticResource textStyle}"/>
+        <Label Text="{Binding University}"  FontSize="18" Style="{StaticResource textStyle}"/>
         <!--UniCoins-->
         <Button Clicked="ChangePassword" Text="Passwort ändern" TextColor="Orange" HorizontalOptions="Center" Margin="0, 40,0,0" FontSize="24" FontAttributes="Bold"/>
+            <Button Clicked="LogOut" Text="Ausloggen" TextColor="Orange" HorizontalOptions="Center" Margin="0, 20,0,0" FontSize="24" FontAttributes="Bold"/>
         </StackLayout>
     </ScrollView>
 </ContentPage.Content>

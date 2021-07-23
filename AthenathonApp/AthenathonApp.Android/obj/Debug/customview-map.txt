@@ -23,9 +23,6 @@ com.google.android.material.bottomnavigation.BottomNavigationView;/Users/louismu
 com.google.android.material.tabs.TabLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/layout/fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/layout/rootlayout.xml
 com.google.android.material.tabs.TabLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/layout/tabbar.xml
-crc642e1c7a98bdb5c44a.AutoFitTextureView;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/49/jl/res/layout/camerafragment.xml
-crc643f46942d9dd1fff9.ShellFlyoutLayout;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/layout/flyoutcontent.xml
-crc64720bb2db43a66fe9.FormsViewPager;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/layout/rootlayout.xml
 declare-styleable;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/0/jl/res/values/attrs.xml
 declare-styleable;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/51/jl/res/values/attrs.xml
 dimen;/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.Android/obj/Debug/lp/0/jl/res/values/dimens.xml

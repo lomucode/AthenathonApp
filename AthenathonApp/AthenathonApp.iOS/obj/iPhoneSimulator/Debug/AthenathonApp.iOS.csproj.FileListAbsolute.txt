@@ -155,3 +155,5 @@
 /Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/obj/iPhoneSimulator/Debug/AthenathonApp.iOS.pdb
 /Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Forms.BackgroundVideoView.iOSCore.dll
 /Users/anni/Documents/GitHub/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.BackgroundVideoView.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Forms.BackgroundVideoView.iOSCore.dll
+/Users/louismueller/Code/AthenathonApp/AthenathonApp/AthenathonApp.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.BackgroundVideoView.dll

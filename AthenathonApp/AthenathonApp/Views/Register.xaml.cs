@@ -66,6 +66,8 @@ namespace AthenathonApp.Views
                     var jsonString = await response.Content.ReadAsStringAsync();
                     var res = JsonConvert.DeserializeObject<User>(jsonString);
                     string id = res.Id;
+                    App.globalToken.Token = id;
+                    App.globalToken.Email = u.Email;
                     return id;
                 }
                 else
